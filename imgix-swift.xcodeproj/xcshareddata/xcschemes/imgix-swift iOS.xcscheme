@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F82BE5B1D25EE1100551F76"
                BuildableName = "ImgixSwift.framework"
-               BlueprintName = "imgixswiftios"
+               BlueprintName = "imgix-swift"
                ReferencedContainer = "container:imgix-swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F82BE5B1D25EE1100551F76"
             BuildableName = "ImgixSwift.framework"
-            BlueprintName = "imgixswiftios"
+            BlueprintName = "imgix-swift"
             ReferencedContainer = "container:imgix-swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F82BE5B1D25EE1100551F76"
             BuildableName = "ImgixSwift.framework"
-            BlueprintName = "imgixswiftios"
+            BlueprintName = "imgix-swift"
             ReferencedContainer = "container:imgix-swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
