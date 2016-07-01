@@ -82,9 +82,9 @@ public class ImgixClient {
             let encodedVal: String
             
             if key.hasSuffix("64") {
-                encodedVal = Base64Coder.encode64(val as! String)
+                encodedVal = Base64Coder.encode64(String(val))
             } else {
-                encodedVal = UriCoder.encodeURIComponent(val as! String)
+                encodedVal = UriCoder.encodeURIComponent(String(val))
             }
             
             queryParams.append(encodedKey + "=" + encodedVal)
