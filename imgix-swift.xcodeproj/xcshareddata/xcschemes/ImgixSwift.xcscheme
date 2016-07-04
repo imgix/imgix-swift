@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8F82BE831D25EE4100551F76"
+               BlueprintIdentifier = "8FBB7C331D29AD510046398D"
                BuildableName = "ImgixSwift.framework"
-               BlueprintName = "imgixswiftmacos"
+               BlueprintName = "ImgixSwift"
                ReferencedContainer = "container:imgix-swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,12 +28,31 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8FBB7C3C1D29AD510046398D"
+               BuildableName = "ImgixSwiftTests.xctest"
+               BlueprintName = "ImgixSwiftTests"
+               ReferencedContainer = "container:imgix-swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8FBB7C331D29AD510046398D"
+            BuildableName = "ImgixSwift.framework"
+            BlueprintName = "ImgixSwift"
+            ReferencedContainer = "container:imgix-swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8F82BE831D25EE4100551F76"
+            BlueprintIdentifier = "8FBB7C331D29AD510046398D"
             BuildableName = "ImgixSwift.framework"
-            BlueprintName = "imgixswiftmacos"
+            BlueprintName = "ImgixSwift"
             ReferencedContainer = "container:imgix-swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8F82BE831D25EE4100551F76"
+            BlueprintIdentifier = "8FBB7C331D29AD510046398D"
             BuildableName = "ImgixSwift.framework"
-            BlueprintName = "imgixswiftmacos"
+            BlueprintName = "ImgixSwift"
             ReferencedContainer = "container:imgix-swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
