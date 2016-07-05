@@ -2,11 +2,13 @@
 
 # imgix-swift [![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=master)](https://travis-ci.org/imgix/imgix-swift) [![Slack Status](http://slack.imgix.com/badge.svg)](http://slack.imgix.com)
 
-The official imgix Swift client.
+The official imgix Swift client. Also plays nicely with Objective-C projects!
 
 imgix is a real-time image processing service and CDN. It allows you to manipulate images merely by changing their URL parameters. For a full list of URL parameters, please see the [imgix URL API documentation](https://www.imgix.com/docs/reference).
 
 * [Usage](#usage)
+  * [Swift](#swift)
+  * [Objective-C](#objective-c)
   * [Automatic Signing](#automatic-signing)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
 
@@ -14,7 +16,11 @@ imgix is a real-time image processing service and CDN. It allows you to manipula
 <a name="usage"></a>
 ## Usage
 
+<a name="swift"></a>
+### Swift
+
 ``` swift
+// Import the framework
 import ImgixSwift
 
 // Set up an ImgixClient
@@ -29,6 +35,27 @@ client.buildUrl("dog.jpg", params: [
   "h": 300,
   "fit": "crop"
 ]) // => https://assets.imgix.net/dog.jpg?w=300&h=300&fit=crop
+```
+
+<a name="objective-c"></a>
+### Objective-C
+
+``` objective-c
+// Import the framework
+#import <ImgixSwift/ImgixSwift.h>
+
+// Set up an ImgixClient
+ImgixClient *client = [[ImgixClient alloc] initWithHost:@"assets.imgix.net"];
+
+// Build a basic URL
+[client buildUrl:@"dog.jpg"]; // => https://assets.imgix.net/dog.jpg
+
+// Add some parameters
+[client buildUrl:@"dog.jpg", params:@{
+  @"w": @300,
+  @"h": @300,
+  @"fit": @"crop",
+}]; // => https://assets.imgix.net/dog.jpg?w=300&h=300&fit=crop
 ```
 
 <a name="automatic-signing"></a>
