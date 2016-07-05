@@ -15,7 +15,11 @@ class SignatureTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        client = ImgixClient.init(host: "imgix-library-secure-test-source.imgix.net", secureUrlToken: "EHFQXiZhxP4wA2c4")
+        client = ImgixClient.init(
+            host: "imgix-library-secure-test-source.imgix.net",
+            secureUrlToken: "EHFQXiZhxP4wA2c4"
+        )
+        
         client.includeLibraryParam = false
     }
     
