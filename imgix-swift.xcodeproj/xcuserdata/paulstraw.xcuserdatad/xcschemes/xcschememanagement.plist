@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ImgixSwift macOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
 		<key>ImgixSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>8FBB7C4F1D29AD730046398D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FF42E8D1D2B312C002BE7D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

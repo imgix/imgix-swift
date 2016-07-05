@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8FBB7C3C1D29AD510046398D"
+               BlueprintIdentifier = "8FF42E8D1D2B312C002BE7D4"
                BuildableName = "ImgixSwiftTests.xctest"
                BlueprintName = "ImgixSwiftTests"
                ReferencedContainer = "container:imgix-swift.xcodeproj">
@@ -52,7 +52,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"

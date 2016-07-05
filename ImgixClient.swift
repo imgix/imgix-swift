@@ -9,10 +9,12 @@
 import Foundation
 
 public class ImgixClient {
-    let host: String
-    var useHttps: Bool = true
-    var secureUrlToken: String? = nil
-    var includeLibraryParam: Bool = true
+    static public let version = "0.1.0"
+    
+    public let host: String
+    public var useHttps: Bool = true
+    public var secureUrlToken: String? = nil
+    public var includeLibraryParam: Bool = true
     
     public init(host: String) {
         self.host = host
@@ -74,7 +76,7 @@ public class ImgixClient {
         var queryParams = [String]()
         
         if (includeLibraryParam) {
-            params["ixlib"] = "swift-".stringByAppendingString(NSBundle.mainBundle().infoDictionary?["CFBundleVersion"] as! String)
+            params["ixlib"] = "swift-" + ImgixClient.version
         }
         
         for (key, val) in params {
