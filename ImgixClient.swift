@@ -39,18 +39,24 @@ public class ImgixClient {
     public func buildUrl(path: String, params: [String: AnyObject]) -> NSURL {
         let path = sanitizePath(path)
         
-        let queryParams: String
+        let urlComponents = NSURLComponents.init()
+        urlComponents.scheme = useHttps ? "https" : "http"
+        urlComponents.host = self.host
+        urlComponents.percentEncodedPath = path
+        urlComponents.queryItems = buildParams(params)
         
         if secureUrlToken != nil {
-            queryParams = signParams(path, queryString: buildParams(params))
-        } else {
-            queryParams = buildParams(params)
+            let signature = signatureForPathAndQueryString(path, queryString: urlComponents.percentEncodedQuery!)
+            urlComponents.queryItems?.append(signature)
         }
         
-        let urlPrefix = useHttps ? "https://" : "http://"
-        let urlString = urlPrefix + host + path + queryParams
-        
-        return NSURL.init(string: urlString)!
+        if urlComponents.queryItems!.isEmpty {
+            urlComponents.queryItems = nil
+        } else {
+            urlComponents.percentEncodedQuery = encodeQueryItems(urlComponents.queryItems!)
+        }
+
+        return urlComponents.URL!
     }
     
     public func buildUrl(path: String) -> NSURL {
@@ -71,42 +77,50 @@ public class ImgixClient {
         return path
     }
     
-    private func buildParams(params: [String: AnyObject]) -> String {
+    private func encodeQueryItems(queryItems: [NSURLQueryItem]) -> String {
+        var queryPairs = [String]()
+        
+        for queryItem in queryItems {
+            let encodedKey = UriCoder.encodeURIComponent(queryItem.name)
+            let encodedVal = UriCoder.encodeURIComponent(queryItem.value!)
+            queryPairs.append(encodedKey + "=" + encodedVal)
+        }
+        
+        return queryPairs.joinWithSeparator("&")
+    }
+    
+    private func buildParams(params: [String: AnyObject]) -> [NSURLQueryItem] {
         var params = params
-        var queryParams = [String]()
+        var queryItems = [NSURLQueryItem]()
         
         if (includeLibraryParam) {
             params["ixlib"] = "swift-" + ImgixClient.version
         }
         
         for (key, val) in params {
-            let encodedKey = UriCoder.encodeURIComponent(key)
-            let encodedVal: String
+            var stringVal = String(val)
             
             if key.hasSuffix("64") {
-                encodedVal = Base64Coder.encode64(String(val))
-            } else {
-                encodedVal = UriCoder.encodeURIComponent(String(val))
+                stringVal = Base64Coder.encode64(stringVal)
             }
             
-            queryParams.append(encodedKey + "=" + encodedVal)
+            let queryItem = NSURLQueryItem.init(name: key, value: stringVal)
+            
+            queryItems.append(queryItem)
         }
         
-        if queryParams.count > 0 {
-            queryParams[0] = "?" + queryParams[0]
-        }
-        
-        return queryParams.joinWithSeparator("&")
+        return queryItems
     }
     
-    private func signParams(path: String, queryString: String) -> String {
-        let signatureBase = secureUrlToken! + path + queryString
-        let signature = signatureBase.md5
+    private func signatureForPathAndQueryString(path: String, queryString: String) -> NSURLQueryItem {
+        var signatureBase = secureUrlToken! + path
         
         if queryString.characters.count > 0 {
-            return queryString + "&s=" + signature
-        } else {
-            return queryString + "?s=" + signature
+            signatureBase += "?" + queryString
         }
+        
+        let signature = signatureBase.md5
+        
+        return NSURLQueryItem.init(name: "s", value: signature)
     }
 }

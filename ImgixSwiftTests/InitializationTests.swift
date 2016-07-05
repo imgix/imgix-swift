@@ -27,13 +27,19 @@ class InitializationTests: XCTestCase {
         XCTAssert(client.host == "paulstraw.imgix.net")
     }
     
-    func testHttps() {
+    func testDefaultsToHttpsUrls() {
+        let client = ImgixClient.init(host: "paulstraw.imgix.net")
+        
+        XCTAssert(client.useHttps == true)
+    }
+    
+    func testSettingHttpUrls() {
         let client = ImgixClient.init(host: "paulstraw.imgix.net", useHttps: false)
         
         XCTAssert(client.useHttps == false)
     }
     
-    func testSecureUrlToken() {
+    func testSettingSecureUrlToken() {
         let client = ImgixClient.init(host: "paulstraw.imgix.net", secureUrlToken: "loreM")
         
         XCTAssert(client.secureUrlToken == "loreM")
