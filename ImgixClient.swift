@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class ImgixClient {
-    static public let version = "0.1.0"
+@objc public class ImgixClient: NSObject {
+    static public let VERSION = "0.1.0"
     
     public let host: String
     public var useHttps: Bool = true
@@ -36,7 +36,7 @@ public class ImgixClient {
         self.secureUrlToken = secureUrlToken
     }
     
-    public func buildUrl(path: String, params: [String: AnyObject]) -> NSURL {
+    public func buildUrl(path: String, params: NSDictionary) -> NSURL {
         let path = sanitizePath(path)
         
         let urlComponents = NSURLComponents.init()
@@ -60,7 +60,7 @@ public class ImgixClient {
     }
     
     public func buildUrl(path: String) -> NSURL {
-        return buildUrl(path, params: [String: AnyObject]())
+        return buildUrl(path, params: NSDictionary())
     }
     
     private func sanitizePath(path: String) -> String {
@@ -89,22 +89,23 @@ public class ImgixClient {
         return queryPairs.joinWithSeparator("&")
     }
     
-    private func buildParams(params: [String: AnyObject]) -> [NSURLQueryItem] {
-        var params = params
+    private func buildParams(params: NSDictionary) -> [NSURLQueryItem] {
+        let params: NSMutableDictionary = NSMutableDictionary.init(dictionary: params)
         var queryItems = [NSURLQueryItem]()
         
         if (includeLibraryParam) {
-            params["ixlib"] = "swift-" + ImgixClient.version
+            params["ixlib"] = "swift-" + ImgixClient.VERSION
         }
         
         for (key, val) in params {
+            let stringKey = String(key)
             var stringVal = String(val)
             
-            if key.hasSuffix("64") {
+            if stringKey.hasSuffix("64") {
                 stringVal = Base64Coder.encode64(stringVal)
             }
             
-            let queryItem = NSURLQueryItem.init(name: key, value: stringVal)
+            let queryItem = NSURLQueryItem.init(name: stringKey, value: stringVal)
             
             queryItems.append(queryItem)
         }

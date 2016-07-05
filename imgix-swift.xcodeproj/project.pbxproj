@@ -14,7 +14,7 @@
 		8FBB7C5E1D29AE560046398D /* UriCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82BEB11D25F5EC00551F76 /* UriCoder.swift */; };
 		8FBB7C601D29AE5A0046398D /* Base64Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82BEB61D25F9FE00551F76 /* Base64Coder.swift */; };
 		8FF42E911D2B312C002BE7D4 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
-		8FF42E991D2B344A002BE7D4 /* ImgixSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F82BE931D25F0FA00551F76 /* ImgixSwift-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FF42E991D2B344A002BE7D4 /* ImgixSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F82BE931D25F0FA00551F76 /* ImgixSwift-Bridging-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8FF42EA11D2B38AC002BE7D4 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +259,7 @@
 					arm64,
 				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = YES;
 				PRODUCT_NAME = ImgixSwift;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s";
@@ -275,6 +276,7 @@
 					arm64,
 				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = YES;
 				PRODUCT_NAME = ImgixSwift;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s";
@@ -337,7 +339,7 @@
 				SDKROOT = macosx10.11;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ImgixSwift-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = ImgixSwift.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s i386";
@@ -396,7 +398,7 @@
 				SDKROOT = macosx10.11;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ImgixSwift-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = ImgixSwift.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s i386";
