@@ -4,32 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ImgixSwift-iOS.xcscheme</key>
+		<key>ImgixSwift-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>ImgixSwift-macOS.xcscheme</key>
+		<key>ImgixSwift-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>ImgixSwift-tvOS.xcscheme</key>
+		<key>ImgixSwift-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>ImgixSwiftTests-iOS.xcscheme</key>
+		<key>ImgixSwiftTests-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>ImgixSwiftTests-macOS.xcscheme</key>
+		<key>ImgixSwiftTests-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>ImgixSwiftTests-tvOS.xcscheme</key>
+		<key>ImgixSwiftTests-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
