@@ -5,7 +5,7 @@
 
 The official imgix Swift client. Written in Swift, but plays nice with Objective-C codebases, too! 👌
 
-imgix is a real-time image processing service and CDN. It lets you edit images on the fly by changing their URL query string parameters. That means you can crop and resize images without having to batch process them or store derivative versions. You can also automatically detect faces, overlay text and other images, and perform advanced compositing operations. To learn more about what you can do with imgix, check out our [site](https://imgix.com/) and [API documentation](https://docs.imgix.com).
+imgix is a real-time image processing service and CDN. It lets you edit images on the fly by changing their URL query string parameters. That means you can crop and resize images without having to batch process them or store derivative versions. You can also automatically detect faces, overlay text and other images, and perform advanced compositing operations. To learn more about what you can do with imgix, check out our [site](https://imgix.com/) and [documentation](https://docs.imgix.com).
 
 * [Installation](#installation)
 * [Usage](#usage)
