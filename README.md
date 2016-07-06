@@ -2,15 +2,24 @@
 
 # imgix-swift [![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=master)](https://travis-ci.org/imgix/imgix-swift) [![Slack Status](http://slack.imgix.com/badge.svg)](http://slack.imgix.com)
 
-The official imgix Swift client. Also plays nicely with Objective-C projects!
+The official imgix Swift client. Written in Swift, but plays nice with Objective-C codebases, too! 👌
 
 imgix is a real-time image processing service and CDN. It allows you to manipulate images merely by changing their URL parameters. For a full list of URL parameters, please see the [imgix URL API documentation](https://www.imgix.com/docs/reference).
 
+* [Installation](#installation)
 * [Usage](#usage)
   * [Swift](#swift)
   * [Objective-C](#objective-c)
+* [Advanced Usage](#advanced-usage)
   * [Automatic Signing](#automatic-signing)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
+
+
+<a name="installation"></a>
+## Installation
+
+* **[Carthage](https://github.com/carthage/carthage):** `github "imgix/imgix-swift"`
+* **[CocoaPods](https://github.com/cocoapods/cocoapods):** `pod "ImgixSwift"`
 
 
 <a name="usage"></a>
@@ -40,6 +49,8 @@ client.buildUrl("dog.jpg", params: [
 <a name="objective-c"></a>
 ### Objective-C
 
+If your project doesn't contain any other Swift code, make sure to set your target's `Build Settings > Build Options > Embedded Content Contains Swift Code` to `YES`.
+
 ``` objective-c
 // Import the framework
 #import <ImgixSwift/ImgixSwift.h>
@@ -57,6 +68,10 @@ ImgixClient *client = [[ImgixClient alloc] initWithHost:@"assets.imgix.net"];
   @"fit": @"crop",
 }]; // => https://assets.imgix.net/dog.jpg?w=300&h=300&fit=crop
 ```
+
+
+<a name="advanced-usage"></a>
+## Advanced Usage
 
 <a name="automatic-signing"></a>
 ### Automatic Signing

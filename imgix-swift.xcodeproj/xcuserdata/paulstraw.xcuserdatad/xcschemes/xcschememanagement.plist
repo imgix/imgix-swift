@@ -4,14 +4,74 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ImgixSwift.xcscheme_^#shared#^_</key>
+		<key>ImgixSwift-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ImgixSwift-macOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>ImgixSwift-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ImgixSwiftTests-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>ImgixSwiftTests-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ImgixSwiftTests-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8F06ECA41D2C8805001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ECB11D2C881B001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ECBE1D2C8828001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ECCB1D2C8832001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ECEB1D2C8AA8001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ECFA1D2C8ABA001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06ED091D2C8AD2001CEC88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8F82BE5B1D25EE1100551F76</key>
 		<dict>
 			<key>primary</key>
