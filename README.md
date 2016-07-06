@@ -109,7 +109,7 @@ client.buildUrl("dog.jpg", params: [
   "txtclr": "fff",
   "txtfit": "max",
   "txtsize": 50
-]) // => https://assets.imgix.net/dog.jpg?txtpad=50&txtalign=center%2Ctop&txt64=8J-QtiBQdXBweSE&txtclr=fff&txtfit=max&ixlib=swift-0.1.1&txtshad=10&w=640&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtsize=50
+]) // => https://assets.imgix.net/dog.jpg?txtpad=50&txtalign=center%2Ctop&txt64=8J-QtiBQdXBweSE&txtclr=fff&txtfit=max&txtshad=10&w=640&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtsize=50
 ```
 
 <a name="what-is-the-ixlib-param"></a>
