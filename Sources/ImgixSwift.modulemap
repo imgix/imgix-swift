@@ -1,6 +1,6 @@
 framework module ImgixSwift {
     umbrella header "ImgixSwift-Umbrella-Header.h"
-    
+
     export *
     module * { export * }
 }
