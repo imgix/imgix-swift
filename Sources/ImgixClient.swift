@@ -9,7 +9,7 @@
 import Foundation
 
 @objc public class ImgixClient: NSObject {
-    static public let VERSION = NSBundle(identifier: "com.imgix.ImgixSwift")!.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+    static public let VERSION = "0.1.1"
     
     public let host: String
     public var useHttps: Bool = true
