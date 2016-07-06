@@ -13,6 +13,7 @@ imgix is a real-time image processing service and CDN. It lets you edit images o
   * [Objective-C](#objective-c)
 * [Advanced Usage](#advanced-usage)
   * [Automatic Signing](#automatic-signing)
+  * [Automatic Base64 Encoding](#automatic-base-64-encoding)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
 
 
@@ -88,6 +89,27 @@ let signedClient = ImgixClient.init(
 signedClient.buildUrl("dog.jpg", params: [
   "bri": 50
 ]) // => https://imgix-library-secure-test-source.imgix.net/dog.jpg?bri=50&s=3b293930d9c288fb788657fd9ed8164f
+```
+
+<a name="automatic-base64-encoding"></a>
+### Automatic Base64 Encoding
+
+imgix-swift will automatically Base64-encode any parameter key ending in `64`, according to the requirements of imgix's [Base64 variant parameters](https://docs.imgix.com/apis/url#base64-variants).
+
+``` swift
+let client = ImgixClient.init(host: "assets.imgix.net")
+
+client.buildUrl("dog.jpg", params: [
+  "w": 640,
+  "txt64": "🐶 Puppy!",
+  "txtfont64": "Avenir Next Demi,Bold",
+  "txtalign": "center,top",
+  "txtpad": 50,
+  "txtshad": 10,
+  "txtclr": "fff",
+  "txtfit": "max",
+  "txtsize": 50
+]) // => https://assets.imgix.net/dog.jpg?txtpad=50&txtalign=center%2Ctop&txt64=8J-QtiBQdXBweSE&txtclr=fff&txtfit=max&ixlib=swift-0.1.1&txtshad=10&w=640&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtsize=50
 ```
 
 <a name="what-is-the-ixlib-param"></a>
