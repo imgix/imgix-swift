@@ -22,19 +22,21 @@
 		8F06ED1E1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
 		8F06ED1F1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */; };
 		8F06ED201D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */; };
-		8F91A76F1D2C94CD0010384D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F91A76E1D2C94CD0010384D /* Info.plist */; };
-		8F91A7711D2C94E20010384D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7701D2C94E20010384D /* StringExtension.swift */; };
-		8F91A7721D2C94E20010384D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7701D2C94E20010384D /* StringExtension.swift */; };
-		8F91A7731D2C94E20010384D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7701D2C94E20010384D /* StringExtension.swift */; };
+		8F7467631D2CBD0900E1CE15 /* Md5Hasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* Md5Hasher.m */; };
+		8F7467641D2CBD0900E1CE15 /* Md5Hasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* Md5Hasher.m */; };
+		8F7467651D2CBD0900E1CE15 /* Md5Hasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* Md5Hasher.m */; };
+		8F7467671D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* Md5Hasher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7467681D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* Md5Hasher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7467691D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* Md5Hasher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F91A7781D2C94EB0010384D /* Base64Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7741D2C94EB0010384D /* Base64Coder.swift */; };
 		8F91A7791D2C94EB0010384D /* Base64Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7741D2C94EB0010384D /* Base64Coder.swift */; };
 		8F91A77A1D2C94EB0010384D /* Base64Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7741D2C94EB0010384D /* Base64Coder.swift */; };
 		8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
-		8F91A77E1D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F91A7761D2C94EB0010384D /* ImgixSwift-Bridging-Header.h */; };
-		8F91A77F1D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F91A7761D2C94EB0010384D /* ImgixSwift-Bridging-Header.h */; };
-		8F91A7801D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F91A7761D2C94EB0010384D /* ImgixSwift-Bridging-Header.h */; };
 		8F91A7811D2C94EB0010384D /* UriCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7771D2C94EB0010384D /* UriCoder.swift */; };
 		8F91A7821D2C94EB0010384D /* UriCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7771D2C94EB0010384D /* UriCoder.swift */; };
 		8F91A7831D2C94EB0010384D /* UriCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7771D2C94EB0010384D /* UriCoder.swift */; };
@@ -71,13 +73,15 @@
 		8F06ECEC1D2C8AA8001CEC88 /* ImgixSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECFB1D2C8ABA001CEC88 /* ImgixSwiftTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ED0A1D2C8AD2001CEC88 /* ImgixSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7467621D2CBD0900E1CE15 /* Md5Hasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Md5Hasher.m; path = Sources/Md5Hasher.m; sourceTree = "<group>"; };
+		8F7467661D2CBD1A00E1CE15 /* Md5Hasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Md5Hasher.h; path = Sources/Md5Hasher.h; sourceTree = "<group>"; };
+		8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Umbrella-Header.h"; path = "Sources/ImgixSwift-Umbrella-Header.h"; sourceTree = "<group>"; };
+		8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = ImgixSwift.modulemap; path = Sources/ImgixSwift.modulemap; sourceTree = "<group>"; };
 		8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
 		8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
 		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
-		8F91A7701D2C94E20010384D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Sources/Extensions/StringExtension.swift; sourceTree = "<group>"; };
 		8F91A7741D2C94EB0010384D /* Base64Coder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base64Coder.swift; path = Sources/Base64Coder.swift; sourceTree = "<group>"; };
 		8F91A7751D2C94EB0010384D /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgixClient.swift; path = Sources/ImgixClient.swift; sourceTree = "<group>"; };
-		8F91A7761D2C94EB0010384D /* ImgixSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Bridging-Header.h"; path = "Sources/ImgixSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F91A7771D2C94EB0010384D /* UriCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UriCoder.swift; path = Sources/UriCoder.swift; sourceTree = "<group>"; };
 		8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationTests.swift; sourceTree = "<group>"; };
 		8FF42E921D2B312C002BE7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,14 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F2152891D2602DA00ADB051 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8F91A7701D2C94E20010384D /* StringExtension.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		8F82BE501D25EDDD00551F76 = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +162,14 @@
 		8F82BE921D25F0ED00551F76 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8F2152891D2602DA00ADB051 /* Extensions */,
 				8F91A76E1D2C94CD0010384D /* Info.plist */,
 				8F91A7741D2C94EB0010384D /* Base64Coder.swift */,
 				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
-				8F91A7761D2C94EB0010384D /* ImgixSwift-Bridging-Header.h */,
+				8F7467621D2CBD0900E1CE15 /* Md5Hasher.m */,
+				8F7467661D2CBD1A00E1CE15 /* Md5Hasher.h */,
 				8F91A7771D2C94EB0010384D /* UriCoder.swift */,
+				8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */,
+				8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -195,7 +193,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A77E1D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */,
+				8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
+				8F7467671D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +202,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A77F1D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */,
+				8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
+				8F7467681D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A7801D2C94EB0010384D /* ImgixSwift-Bridging-Header.h in Headers */,
+				8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
+				8F7467691D2CBD1A00E1CE15 /* Md5Hasher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +383,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A76F1D2C94CD0010384D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +430,8 @@
 			files = (
 				8F91A7781D2C94EB0010384D /* Base64Coder.swift in Sources */,
 				8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */,
+				8F7467631D2CBD0900E1CE15 /* Md5Hasher.m in Sources */,
 				8F91A7811D2C94EB0010384D /* UriCoder.swift in Sources */,
-				8F91A7711D2C94E20010384D /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +441,8 @@
 			files = (
 				8F91A7791D2C94EB0010384D /* Base64Coder.swift in Sources */,
 				8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */,
+				8F7467641D2CBD0900E1CE15 /* Md5Hasher.m in Sources */,
 				8F91A7821D2C94EB0010384D /* UriCoder.swift in Sources */,
-				8F91A7721D2C94E20010384D /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +452,8 @@
 			files = (
 				8F91A77A1D2C94EB0010384D /* Base64Coder.swift in Sources */,
 				8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */,
+				8F7467651D2CBD0900E1CE15 /* Md5Hasher.m in Sources */,
 				8F91A7831D2C94EB0010384D /* UriCoder.swift in Sources */,
-				8F91A7731D2C94E20010384D /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +558,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -565,7 +566,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,13 +617,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -677,6 +679,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -684,7 +687,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -734,13 +737,14 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -800,6 +804,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -807,7 +812,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -859,13 +864,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Sources/ImgixSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				VERSIONING_SYSTEM = "apple-generic";

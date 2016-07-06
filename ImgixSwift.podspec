@@ -9,16 +9,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/imgix/imgix-swift.git", :tag => s.version }
 
   s.requires_arc = true
-  s.source_files = ["Sources/*.swift", "Sources/**/*.swift", "Sources/ImgixSwift-Bridging-Header.h"]
-
-  s.xcconfig = {
-    # "SWIFT_OBJC_BRIDGING_HEADER" => "Sources/ImgixSwift-Bridging-Header.h",
-    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => true
-    # "SWIFT_INCLUDE_PATHS" => "$(SRCROOT)/imgix-swift/CommonCrypto"
-  }
-  # s.preserve_paths = ["CommonCrypto/*"]
-  # s.preserve_path = "CommonCrypto/*"
-  # s.module_map = "CommonCrypto/module.map"
+  s.source_files = ["Sources/*.{h,m,swift}"]
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"

@@ -120,7 +120,7 @@ import Foundation
             signatureBase += "?" + queryString
         }
         
-        let signature = signatureBase.md5
+        let signature = Md5Hasher.hash(signatureBase)
         
         return NSURLQueryItem.init(name: "s", value: signature)
     }
