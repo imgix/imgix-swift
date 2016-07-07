@@ -6,4 +6,4 @@
 //
 //
 
-#import "Md5Hasher.h"
+#import "NSString+ImgixSwiftMd5.h"
