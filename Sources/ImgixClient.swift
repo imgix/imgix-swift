@@ -94,7 +94,7 @@ import Foundation
         var queryItems = [URLQueryItem]()
 
         if (includeLibraryParam) {
-            params["ixlib"] = "swift-" + ImgixClient.VERSION
+            params.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
         for (key, val) in params {
