@@ -67,7 +67,7 @@ import Foundation
         var path = path
 
         if path.hasPrefix("http://") || path.hasPrefix("https://") {
-            path = UriCoder.encodeURIComponent(path)
+            path = path.ixEncodeUriComponent()
         }
 
         if !path.hasPrefix("/") {
@@ -81,8 +81,8 @@ import Foundation
         var queryPairs = [String]()
 
         for queryItem in queryItems {
-            let encodedKey = UriCoder.encodeURIComponent(queryItem.name)
-            let encodedVal = UriCoder.encodeURIComponent(queryItem.value!)
+            let encodedKey = queryItem.name.ixEncodeUriComponent()
+            let encodedVal = queryItem.value!.ixEncodeUriComponent()
             queryPairs.append(encodedKey + "=" + encodedVal)
         }
 
@@ -102,7 +102,7 @@ import Foundation
             var stringVal = String(val)
 
             if stringKey.hasSuffix("64") {
-                stringVal = Base64Coder.encode64(stringVal)
+                stringVal = stringVal.ixEncode64()
             }
 
             let queryItem = NSURLQueryItem.init(name: stringKey, value: stringVal)
@@ -120,7 +120,7 @@ import Foundation
             signatureBase += "?" + queryString
         }
 
-        let signature = Md5Hasher.hash(signatureBase)
+        let signature = signatureBase.ixMd5
 
         return NSURLQueryItem.init(name: "s", value: signature)
     }
