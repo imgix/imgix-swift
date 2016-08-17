@@ -19,7 +19,7 @@ extension String {
     func ixEncode64() -> String {
         let strData = self.data(using: String.Encoding.utf8)
         
-        guard var str64 = strData?.base64EncodedString(options: NSData.Base64EncodingOptions()) else {
+        guard var str64 = strData?.base64EncodedString(options: Data.Base64EncodingOptions()) else {
             return ""
         }
         
