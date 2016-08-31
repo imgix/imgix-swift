@@ -46,7 +46,7 @@ import Foundation
         urlComponents.queryItems = buildParams(params)
 
         if secureUrlToken != nil {
-            let signature = signatureForPathAndQueryString(path, queryString: urlComponents.percentEncodedQuery!)
+            let signature = signatureForPathAndQueryString(path, queryString: encodeQueryItems(urlComponents.queryItems!))
             urlComponents.queryItems?.append(signature)
         }
 
