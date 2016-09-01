@@ -48,5 +48,19 @@ class SignatureTests: XCTestCase {
         XCTAssert(generatedUrl.query == expectedQuery)
     }
     
+    func testSigningWithParamIncludingComma() {
+        let generatedUrl = client.buildUrl("dog.jpg", params: ["rect": "1300,900,360,360"])
+        let expectedQuery = "rect=1300%2C900%2C360%2C360&s=aa57997fdc2d6dd979b11bb831a9c711"
+        
+        XCTAssert(generatedUrl.query == expectedQuery)
+    }
+    
+    func testSigningWithBase64ParamVariant() {
+        let generatedUrl = client.buildUrl("dog.jpg", params: ["rect64": "1300,900,360,360"])
+        let expectedQuery = "rect64=MTMwMCw5MDAsMzYwLDM2MA&s=364717b54a62b58a2b1eb29949c08d95"
+        
+        XCTAssert(generatedUrl.query == expectedQuery)
+    }
+    
 }
 
