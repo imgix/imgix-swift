@@ -9,7 +9,7 @@
 import Foundation
 
 @objc open class ImgixClient: NSObject {
-    static open let VERSION = "0.1.2"
+    static open let VERSION = "0.1.4"
 
     open let host: String
     open var useHttps: Bool = true
@@ -46,7 +46,7 @@ import Foundation
         urlComponents.queryItems = buildParams(params)
 
         if secureUrlToken != nil {
-            let signature = signatureForPathAndQueryString(path, queryString: urlComponents.percentEncodedQuery!)
+            let signature = signatureForPathAndQueryString(path, queryString: encodeQueryItems(urlComponents.queryItems!))
             urlComponents.queryItems?.append(signature)
         }
 
