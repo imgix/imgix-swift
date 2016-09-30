@@ -10,27 +10,27 @@ import Foundation
 
 extension String {
     static var ixEncodeUriComponentCharSet: NSMutableCharacterSet {
-        let cs = NSMutableCharacterSet.alphanumericCharacterSet()
-        cs.addCharactersInString("-_.!~*'()")
+        let cs = NSMutableCharacterSet.alphanumeric()
+        cs.addCharacters(in: "-_.!~*'()")
         
         return cs
     }
     
     func ixEncode64() -> String {
-        let strData = self.dataUsingEncoding(NSUTF8StringEncoding)
+        let strData = self.data(using: String.Encoding.utf8)
         
-        guard var str64 = strData?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions()) else {
+        guard var str64 = strData?.base64EncodedString(options: Data.Base64EncodingOptions()) else {
             return ""
         }
         
-        str64 = str64.stringByReplacingOccurrencesOfString("=", withString: "")
-        str64 = str64.stringByReplacingOccurrencesOfString("/", withString: "_")
-        str64 = str64.stringByReplacingOccurrencesOfString("+", withString: "-")
+        str64 = str64.replacingOccurrences(of: "=", with: "")
+        str64 = str64.replacingOccurrences(of: "/", with: "_")
+        str64 = str64.replacingOccurrences(of: "+", with: "-")
         
         return str64
     }
     
     func ixEncodeUriComponent() -> String {
-        return self.stringByAddingPercentEncodingWithAllowedCharacters(String.ixEncodeUriComponentCharSet)!
+        return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriComponentCharSet as CharacterSet)!
     }
 }

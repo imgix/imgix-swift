@@ -8,13 +8,13 @@
 
 import Foundation
 
-@objc public class ImgixClient: NSObject {
-    static public let VERSION = "0.1.4"
+@objc open class ImgixClient: NSObject {
+    static open let VERSION = "0.1.4"
 
-    public let host: String
-    public var useHttps: Bool = true
-    public var secureUrlToken: String? = nil
-    public var includeLibraryParam: Bool = true
+    open let host: String
+    open var useHttps: Bool = true
+    open var secureUrlToken: String? = nil
+    open var includeLibraryParam: Bool = true
 
     public init(host: String) {
         self.host = host
@@ -36,10 +36,10 @@ import Foundation
         self.secureUrlToken = secureUrlToken
     }
 
-    public func buildUrl(path: String, params: NSDictionary) -> NSURL {
+    open func buildUrl(_ path: String, params: NSDictionary) -> URL {
         let path = sanitizePath(path)
 
-        let urlComponents = NSURLComponents.init()
+        var urlComponents = URLComponents.init()
         urlComponents.scheme = useHttps ? "https" : "http"
         urlComponents.host = self.host
         urlComponents.percentEncodedPath = path
@@ -56,14 +56,14 @@ import Foundation
             urlComponents.percentEncodedQuery = encodeQueryItems(urlComponents.queryItems!)
         }
 
-        return urlComponents.URL!
+        return urlComponents.url!
     }
 
-    public func buildUrl(path: String) -> NSURL {
+    open func buildUrl(_ path: String) -> URL {
         return buildUrl(path, params: NSDictionary())
     }
 
-    private func sanitizePath(path: String) -> String {
+    fileprivate func sanitizePath(_ path: String) -> String {
         var path = path
 
         if path.hasPrefix("http://") || path.hasPrefix("https://") {
@@ -77,7 +77,7 @@ import Foundation
         return path
     }
 
-    private func encodeQueryItems(queryItems: [NSURLQueryItem]) -> String {
+    fileprivate func encodeQueryItems(_ queryItems: [URLQueryItem]) -> String {
         var queryPairs = [String]()
 
         for queryItem in queryItems {
@@ -86,26 +86,26 @@ import Foundation
             queryPairs.append(encodedKey + "=" + encodedVal)
         }
 
-        return queryPairs.joinWithSeparator("&")
+        return queryPairs.joined(separator: "&")
     }
 
-    private func buildParams(params: NSDictionary) -> [NSURLQueryItem] {
+    fileprivate func buildParams(_ params: NSDictionary) -> [URLQueryItem] {
         let params: NSMutableDictionary = NSMutableDictionary.init(dictionary: params)
-        var queryItems = [NSURLQueryItem]()
+        var queryItems = [URLQueryItem]()
 
         if (includeLibraryParam) {
-            params["ixlib"] = "swift-" + ImgixClient.VERSION
+            params.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
         for (key, val) in params {
-            let stringKey = String(key)
-            var stringVal = String(val)
+            let stringKey = String(describing: key)
+            var stringVal = String(describing: val)
 
             if stringKey.hasSuffix("64") {
                 stringVal = stringVal.ixEncode64()
             }
 
-            let queryItem = NSURLQueryItem.init(name: stringKey, value: stringVal)
+            let queryItem = URLQueryItem.init(name: stringKey, value: stringVal)
 
             queryItems.append(queryItem)
         }
@@ -113,7 +113,7 @@ import Foundation
         return queryItems
     }
 
-    private func signatureForPathAndQueryString(path: String, queryString: String) -> NSURLQueryItem {
+    fileprivate func signatureForPathAndQueryString(_ path: String, queryString: String) -> URLQueryItem {
         var signatureBase = secureUrlToken! + path
 
         if queryString.characters.count > 0 {
@@ -122,6 +122,6 @@ import Foundation
 
         let signature = signatureBase.ixMd5
 
-        return NSURLQueryItem.init(name: "s", value: signature)
+        return URLQueryItem.init(name: "s", value: signature)
     }
 }
