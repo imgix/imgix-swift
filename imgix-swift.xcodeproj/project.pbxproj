@@ -37,6 +37,8 @@
 		8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
+		8FB9ABCB1DCBFF3F00D2FD6B /* NSDictionary+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCA1DCBFF3F00D2FD6B /* NSDictionary+ImgixSwift.swift */; };
+		8FB9ABCD1DCC037B00D2FD6B /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
 		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		8F91A7751D2C94EB0010384D /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgixClient.swift; path = Sources/ImgixClient.swift; sourceTree = "<group>"; };
+		8FB9ABCA1DCBFF3F00D2FD6B /* NSDictionary+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+ImgixSwift.swift"; sourceTree = "<group>"; };
+		8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructTests.swift; sourceTree = "<group>"; };
 		8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationTests.swift; sourceTree = "<group>"; };
 		8FF42E921D2B312C002BE7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildUrlTests.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				8F91A76E1D2C94CD0010384D /* Info.plist */,
 				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
 				8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */,
+				8FB9ABCA1DCBFF3F00D2FD6B /* NSDictionary+ImgixSwift.swift */,
 				8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */,
 				8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */,
 				8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */,
@@ -174,6 +179,7 @@
 			children = (
 				8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */,
 				8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */,
+				8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */,
 				8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */,
 				8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */,
 				8FF42E921D2B312C002BE7D4 /* Info.plist */,
@@ -431,6 +437,7 @@
 			files = (
 				8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */,
 				8F7467631D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
+				8FB9ABCB1DCBFF3F00D2FD6B /* NSDictionary+ImgixSwift.swift in Sources */,
 				8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F06ED171D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
+				8FB9ABCD1DCC037B00D2FD6B /* ReconstructTests.swift in Sources */,
 				8F06ED151D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
 				8F06ED161D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
 				8F06ED181D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */,
