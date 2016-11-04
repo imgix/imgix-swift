@@ -9,7 +9,7 @@
 import Foundation
 
 @objc open class ImgixClient: NSObject {
-    static open let VERSION = "0.2.0"
+    static open let VERSION = "0.3.0"
 
     open let host: String
     open var useHttps: Bool = true
@@ -62,30 +62,30 @@ import Foundation
     open func buildUrl(_ path: String) -> URL {
         return buildUrl(path, params: NSDictionary())
     }
-    
+
     open func reconstruct(originalURL: URL, params: NSDictionary) -> URL {
         let originalURLComponents = URLComponents(url: originalURL, resolvingAgainstBaseURL: false)
         let mergedParams = NSMutableDictionary()
-        
+
         if let originalURLQueryItems = originalURLComponents?.queryItems {
             for queryItem in originalURLQueryItems {
                 mergedParams.setValue(queryItem.value, forKey: queryItem.name)
             }
         }
-        
+
         mergedParams.addEntries(from: params as! [AnyHashable : Any])
-        
+
         let generatedURL = buildUrl(originalURL.path, params: mergedParams)
-        
+
         var outputURLComponents = URLComponents(url: generatedURL, resolvingAgainstBaseURL: false)!
-        
+
         outputURLComponents.host = originalURL.host
         outputURLComponents.scheme = originalURL.scheme
         outputURLComponents.port = originalURL.port
-        
+
         return outputURLComponents.url!
     }
-    
+
     open func reconstruct(originalURL: URL) -> URL {
         return reconstruct(originalURL: originalURL, params: [:])
     }
