@@ -14,6 +14,7 @@ imgix is a real-time image processing service and CDN. It lets you edit images o
 * [Advanced Usage](#advanced-usage)
   * [Automatic Signing](#automatic-signing)
   * [Automatic Base64 Encoding](#automatic-base-64-encoding)
+  * [URL Reconstruction](#url-reconstruction)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
 
 
@@ -111,6 +112,22 @@ client.buildUrl("dog.jpg", params: [
   "txtsize": 50
 ]) // => https://assets.imgix.net/dog.jpg?txtpad=50&txtalign=center%2Ctop&txt64=8J-QtiBQdXBweSE&txtclr=fff&txtfit=max&txtshad=10&w=640&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtsize=50
 ```
+
+<a name="url-reconstruction"></a>
+### URL Reconstruction
+
+You can reconstruct existing URLs by using the `ImgixClient#reconstruct` method. Existing parameters on the input URL will be merged and/or overridden by passed params.
+
+``` swift
+let client = ImgixClient.init(host: "assets.imgix.net")
+let inputUrl = URL.init(string: "https://paulstraw.imgix.net/pika.jpg?w=300")!
+
+client.buildUrl(inputUrl, params: [
+  "h": 300,
+  "fit": "crop"
+]) // => https://paulstraw.imgix.net/pika.jpg?w=300&h=300&fit=crop
+```
+
 
 <a name="what-is-the-ixlib-param"></a>
 ### What is the `ixlib` param?
