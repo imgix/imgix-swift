@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CommonCrypto
 
 extension String {
     static var ixEncodeUriComponentCharSet: NSMutableCharacterSet {
@@ -33,4 +34,19 @@ extension String {
     func ixEncodeUriComponent() -> String {
         return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriComponentCharSet as CharacterSet)!
     }
+
+    func ixMd5() -> String {
+        let messageData = self.data(using:.utf8)!
+        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
+
+        _ = digestData.withUnsafeMutableBytes {digestBytes in
+            messageData.withUnsafeBytes {messageBytes in
+                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
+            }
+        }
+
+        return digestData.map { String(format: "%02hhx", $0) }.joined()
+    }
+
 }
+

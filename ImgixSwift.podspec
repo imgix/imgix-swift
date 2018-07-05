@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   }
 
   s.requires_arc = true
-  s.source_files = ["Sources/*.{h,m,swift}"]
+  s.source_files = ["Sources/ImgixSwift/*.swift"]
 
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.10"

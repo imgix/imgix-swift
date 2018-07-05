@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ImgixSwift
+@testable import ImgixSwift
 
 class BuildUrlTests: XCTestCase {
     var client: ImgixClient!

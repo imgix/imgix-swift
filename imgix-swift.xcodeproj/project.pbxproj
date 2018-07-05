@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69FA78EE20EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA78ED20EC3AA0000428B6 /* String+ImgixSwift.swift */; };
+		69FA78EF20EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA78ED20EC3AA0000428B6 /* String+ImgixSwift.swift */; };
+		69FA78F020EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA78ED20EC3AA0000428B6 /* String+ImgixSwift.swift */; };
 		8F06ECF11D2C8AA8001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */; };
 		8F06ED001D2C8ABA001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */; };
 		8F06ED0F1D2C8AD2001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */; };
@@ -22,18 +25,6 @@
 		8F06ED1E1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
 		8F06ED1F1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */; };
 		8F06ED201D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */; };
-		8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F7467631D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467641D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467651D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467671D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F7467681D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F7467691D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
@@ -65,21 +56,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69FA78ED20EC3AA0000428B6 /* String+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+ImgixSwift.swift"; path = "Sources/ImgixSwift/String+ImgixSwift.swift"; sourceTree = "<group>"; };
 		8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECEC1D2C8AA8001CEC88 /* ImgixSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECFB1D2C8ABA001CEC88 /* ImgixSwiftTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ED0A1D2C8AD2001CEC88 /* ImgixSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+ImgixSwift.swift"; path = "Sources/String+ImgixSwift.swift"; sourceTree = "<group>"; };
-		8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ImgixSwiftMd5.m"; path = "Sources/NSString+ImgixSwiftMd5.m"; sourceTree = "<group>"; };
-		8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ImgixSwiftMd5.h"; path = "Sources/NSString+ImgixSwiftMd5.h"; sourceTree = "<group>"; };
-		8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Umbrella-Header.h"; path = "Sources/ImgixSwift-Umbrella-Header.h"; sourceTree = "<group>"; };
-		8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = ImgixSwift.modulemap; path = Sources/ImgixSwift.modulemap; sourceTree = "<group>"; };
 		8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
 		8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
-		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
-		8F91A7751D2C94EB0010384D /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgixClient.swift; path = Sources/ImgixClient.swift; sourceTree = "<group>"; };
+		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/ImgixSwift/Info.plist; sourceTree = "<group>"; };
+		8F91A7751D2C94EB0010384D /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgixClient.swift; path = Sources/ImgixSwift/ImgixClient.swift; sourceTree = "<group>"; };
 		8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructTests.swift; sourceTree = "<group>"; };
 		8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationTests.swift; sourceTree = "<group>"; };
 		8FF42E921D2B312C002BE7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8F82BE5D1D25EE1100551F76 /* Products */,
-				8FF42E8F1D2B312C002BE7D4 /* ImgixSwiftTests */,
-				8F82BE921D25F0ED00551F76 /* Sources */,
+				8FF42E8F1D2B312C002BE7D4 /* Tests */,
+				8F82BE921D25F0ED00551F76 /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,21 +144,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F82BE921D25F0ED00551F76 /* Sources */ = {
+		8F82BE921D25F0ED00551F76 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				69FA78ED20EC3AA0000428B6 /* String+ImgixSwift.swift */,
 				8F91A76E1D2C94CD0010384D /* Info.plist */,
 				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
-				8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */,
-				8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */,
-				8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */,
-				8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */,
-				8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */,
 			);
-			name = Sources;
+			name = Source;
 			sourceTree = "<group>";
 		};
-		8FF42E8F1D2B312C002BE7D4 /* ImgixSwiftTests */ = {
+		8FF42E8F1D2B312C002BE7D4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */,
@@ -181,7 +164,7 @@
 				8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */,
 				8FF42E921D2B312C002BE7D4 /* Info.plist */,
 			);
-			path = ImgixSwiftTests;
+			path = Tests/ImgixSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +174,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467671D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +181,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467681D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,8 +188,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467691D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,8 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467631D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
-				8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				69FA78EE20EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467641D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
-				8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				69FA78EF20EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,8 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467651D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
-				8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				69FA78F020EC3AA0000428B6 /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,11 +529,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -567,6 +541,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)/Sources/ImgixSwift/include/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -615,17 +590,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)/Sources/ImgixSwift/include/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME).h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -680,10 +656,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = Sources/ImgixSwift/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -739,10 +715,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = Sources/ImgixSwift/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
@@ -805,11 +781,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = Sources/ImgixSwift/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -866,11 +842,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = Sources/ImgixSwift/ImgixSwift.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
@@ -924,7 +900,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -969,7 +945,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1017,7 +993,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1061,7 +1037,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1109,7 +1085,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1151,7 +1127,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imgix.ImgixSwiftTests-tvOS";
@@ -1199,6 +1175,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = ImgixSwift;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)/Sources/ImgixSwift/CommonCrypto";
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s";
 			};
 			name = Debug;
@@ -1237,6 +1214,7 @@
 				INFOPLIST_FILE = "";
 				PRODUCT_NAME = ImgixSwift;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(PROJECT_DIR)/Sources/ImgixSwift/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALID_ARCHS = "arm64 x86_64 armv7 armv7s";
 			};
