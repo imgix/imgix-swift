@@ -9,7 +9,7 @@
 import Foundation
 
 @objc open class ImgixClient: NSObject {
-    @objc static open let VERSION = "0.4.0"
+    @objc static open let VERSION = "0.4.1"
 
     @objc open let host: String
     @objc open var useHttps: Bool = true
