@@ -9,13 +9,12 @@
 import Foundation
 
 extension String {
-    static var ixEncodeUriComponentCharSet: NSMutableCharacterSet {
-        let cs = NSMutableCharacterSet.alphanumeric()
-        cs.addCharacters(in: "-_.!~*'()")
-        
+    static var ixEncodeUriComponentCharSet: CharacterSet = {
+        var cs = CharacterSet.alphanumerics
+        cs.insert(charactersIn: "-_.!~*'()")
         return cs
-    }
-    
+    }()
+
     func ixEncode64() -> String {
         let strData = self.data(using: String.Encoding.utf8)
         
@@ -31,6 +30,6 @@ extension String {
     }
     
     func ixEncodeUriComponent() -> String {
-        return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriComponentCharSet as CharacterSet)!
+        return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriComponentCharSet)!
     }
 }
