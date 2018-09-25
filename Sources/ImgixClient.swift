@@ -124,9 +124,9 @@ import Foundation
             params.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
-        for (key, val) in params {
+        for key in params.keys.sorted() {
             let stringKey = String(describing: key)
-            var stringVal = String(describing: val)
+            var stringVal = String(describing: params[val])
 
             if stringKey.hasSuffix("64") {
                 stringVal = stringVal.ixEncode64()

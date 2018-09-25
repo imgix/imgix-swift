@@ -50,14 +50,14 @@ class BuildUrlTests: XCTestCase {
         client.includeLibraryParam = true
         
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 400])
-        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?w=400&ixlib=swift-" + ImgixClient.VERSION
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?ixlib=swift-" + ImgixClient.VERSION + "&w=400"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
     
     func testBuildUrlWithMultipleParams() {
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 400, "flip": "v"])
-        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?w=400&flip=v"
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?flip=v&w=400"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
