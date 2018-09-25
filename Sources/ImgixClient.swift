@@ -127,14 +127,13 @@ import Foundation
         let keys = params.allKeys.map { String(describing: $0) }
 
         for key in keys.sorted(by: {$0 < $1}) {
-            let stringKey = String(describing: key)
             var stringVal = String(describing: params[key]!)
 
-            if stringKey.hasSuffix("64") {
+            if key.hasSuffix("64") {
                 stringVal = stringVal.ixEncode64()
             }
 
-            let queryItem = URLQueryItem.init(name: stringKey, value: stringVal)
+            let queryItem = URLQueryItem.init(name: key, value: stringVal)
 
             queryItems.append(queryItem)
         }
