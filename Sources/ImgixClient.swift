@@ -124,7 +124,9 @@ import Foundation
             params.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
-        for key in params.allKeys.sorted(by: {$0 < $1}) {
+        let keys: [String] = params.allKeys
+
+        for key in keys.sorted(by: {$0 < $1}) {
             let stringKey = String(describing: key)
             var stringVal = String(describing: params[val])
 
