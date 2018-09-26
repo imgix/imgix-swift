@@ -38,6 +38,13 @@ class BuildUrlTests: XCTestCase {
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
+
+    func testBuildUrlEmptyParams() {
+        let generatedUrl = client.buildUrl("1.jpg", params: [:])
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg"
+        
+        XCTAssert(generatedUrl.absoluteString == expectedUrl)
+    }
     
     func testBuildUrlWithOneParam() {
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 400])
@@ -58,6 +65,21 @@ class BuildUrlTests: XCTestCase {
     func testBuildUrlWithMultipleParams() {
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 400, "flip": "v"])
         let expectedUrl = "https://paulstraw.imgix.net/1.jpg?flip=v&w=400"
+        
+        XCTAssert(generatedUrl.absoluteString == expectedUrl)
+    }
+
+    func testBuildUrlWithMultipleParamsSorted() {
+        let generatedUrl = client.buildUrl("1.jpg", params: ["w": 900, "h": 300, "fit": "crop", "crop": "entropy"])
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?crop=entropy&fit=crop&h=300&w=900"
+        
+        XCTAssert(generatedUrl.absoluteString == expectedUrl)
+    }
+
+    func testBuildUrlWithMultipleParamsAndIncludeLibraryParamSorted() {
+        client.includeLibraryParam = true
+        let generatedUrl = client.buildUrl("1.jpg", params: ["w": 900, "h": 300, "fit": "crop", "crop": "entropy"])
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?crop=entropy&fit=crop&h=300" + "&ixlib=swift-" + ImgixClient.VERSION + "&w=900"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
