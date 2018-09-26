@@ -34,7 +34,7 @@ class BuildUrlTests: XCTestCase {
         client.includeLibraryParam = true
         
         let generatedUrl = client.buildUrl("1.jpg")
-        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?ixlib=swift-" + ImgixClient.VERSION
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?ixlib=swift-\(ImgixClient.VERSION)"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
@@ -57,7 +57,7 @@ class BuildUrlTests: XCTestCase {
         client.includeLibraryParam = true
         
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 400])
-        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?ixlib=swift-" + ImgixClient.VERSION + "&w=400"
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?ixlib=swift-\(ImgixClient.VERSION)&w=400"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
@@ -79,7 +79,7 @@ class BuildUrlTests: XCTestCase {
     func testBuildUrlWithMultipleParamsAndIncludeLibraryParamSorted() {
         client.includeLibraryParam = true
         let generatedUrl = client.buildUrl("1.jpg", params: ["w": 900, "h": 300, "fit": "crop", "crop": "entropy"])
-        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?crop=entropy&fit=crop&h=300" + "&ixlib=swift-" + ImgixClient.VERSION + "&w=900"
+        let expectedUrl = "https://paulstraw.imgix.net/1.jpg?crop=entropy&fit=crop&h=300&ixlib=swift-\(ImgixClient.VERSION)&w=900"
         
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
