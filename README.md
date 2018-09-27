@@ -125,7 +125,7 @@ You can reconstruct existing URLs by using the `ImgixClient#reconstruct` method.
 let client = ImgixClient.init(host: "assets.imgix.net")
 let inputUrl = URL.init(string: "https://paulstraw.imgix.net/pika.jpg?w=300")!
 
-client.buildUrl(inputUrl, params: [
+client.reconstruct(originalURL: inputUrl, params: [
   "h": 300,
   "fit": "crop"
 ]) // => https://paulstraw.imgix.net/pika.jpg?fit=crop&h=300&w=300
