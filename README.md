@@ -17,7 +17,6 @@ imgix is a real-time image processing service and CDN. It lets you edit images o
   * [URL Reconstruction](#url-reconstruction)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
 
-
 <a name="installation"></a>
 ## Installation
 
@@ -30,6 +29,10 @@ imgix is a real-time image processing service and CDN. It lets you edit images o
 
 <a name="swift"></a>
 ### Swift
+
+The imgix Swift client is compatible with Swift 4.0.
+
+The lastest version compatible with Swift 3.0 is [`0.3.0`](https://github.com/imgix/imgix-swift/releases/tag/0.3.0).
 
 ``` swift
 // Import the framework
@@ -46,7 +49,7 @@ client.buildUrl("dog.jpg", params: [
   "w": 300,
   "h": 300,
   "fit": "crop"
-]) // => https://assets.imgix.net/dog.jpg?w=300&h=300&fit=crop
+]) // => https://assets.imgix.net/dog.jpg?fit=crop&h=300&w=300
 ```
 
 <a name="objective-c"></a>
@@ -69,7 +72,7 @@ ImgixClient *client = [[ImgixClient alloc] initWithHost:@"assets.imgix.net"];
   @"w": @300,
   @"h": @300,
   @"fit": @"crop",
-}]; // => https://assets.imgix.net/dog.jpg?w=300&h=300&fit=crop
+}]; // => https://assets.imgix.net/dog.jpg?fit=crop&h=300&w=300
 ```
 
 
@@ -110,7 +113,7 @@ client.buildUrl("dog.jpg", params: [
   "txtclr": "fff",
   "txtfit": "max",
   "txtsize": 50
-]) // => https://assets.imgix.net/dog.jpg?txtpad=50&txtalign=center%2Ctop&txt64=8J-QtiBQdXBweSE&txtclr=fff&txtfit=max&txtshad=10&w=640&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtsize=50
+]) // => https://assets.imgix.net/dog.jpg?txt64=8J-QtiBQdXBweSE&txtalign=center%2Ctop&txtclr=fff&txtfit=max&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtpad=50&txtshad=10&txtsize=50&w=640
 ```
 
 <a name="url-reconstruction"></a>
@@ -122,10 +125,10 @@ You can reconstruct existing URLs by using the `ImgixClient#reconstruct` method.
 let client = ImgixClient.init(host: "assets.imgix.net")
 let inputUrl = URL.init(string: "https://paulstraw.imgix.net/pika.jpg?w=300")!
 
-client.buildUrl(inputUrl, params: [
+client.reconstruct(originalURL: inputUrl, params: [
   "h": 300,
   "fit": "crop"
-]) // => https://paulstraw.imgix.net/pika.jpg?w=300&h=300&fit=crop
+]) // => https://paulstraw.imgix.net/pika.jpg?fit=crop&h=300&w=300
 ```
 
 

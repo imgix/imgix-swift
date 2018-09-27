@@ -117,26 +117,29 @@ import Foundation
     }
 
     fileprivate func buildParams(_ params: NSDictionary) -> [URLQueryItem] {
-        let params: NSMutableDictionary = NSMutableDictionary.init(dictionary: params)
         var queryItems = [URLQueryItem]()
+        let queryParams: NSMutableDictionary = NSMutableDictionary.init(dictionary: params)
 
         if (includeLibraryParam) {
-            params.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
+            queryParams.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
-        for (key, val) in params {
-            let stringKey = String(describing: key)
-            var stringVal = String(describing: val)
+        let keys = queryParams.allKeys.map { String(describing: $0) }
+        
+        for key in keys.sorted(by: {$0 < $1}) {
+            if let val = queryParams[key] {
+                var stringVal = String(describing: val)
+                
+                if key.hasSuffix("64") {
+                    stringVal = stringVal.ixEncode64()
+                }
 
-            if stringKey.hasSuffix("64") {
-                stringVal = stringVal.ixEncode64()
+                let queryItem = URLQueryItem.init(name: key, value: stringVal)
+                
+                queryItems.append(queryItem)
             }
-
-            let queryItem = URLQueryItem.init(name: stringKey, value: stringVal)
-
-            queryItems.append(queryItem)
         }
-
+        
         return queryItems
     }
 
