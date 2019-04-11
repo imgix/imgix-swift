@@ -9,9 +9,9 @@
 import Foundation
 
 @objc open class ImgixClient: NSObject {
-    @objc static open let VERSION = "0.4.3"
+    @objc static public let VERSION = "0.4.3"
 
-    @objc open let host: String
+    @objc public let host: String
     @objc open var useHttps: Bool = true
     @objc open var secureUrlToken: String? = nil
     @objc open var includeLibraryParam: Bool = true
