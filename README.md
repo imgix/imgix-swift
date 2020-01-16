@@ -1,11 +1,15 @@
-[![imgix logo](https://assets.imgix.net/imgix-logo-web-2014.pdf?page=2&fm=png&w=150)](https://imgix.com)
+<!-- ix-docs-ignore -->
+![imgix logo](https://assets.imgix.net/sdk-imgix-logo.svg)
 
-# imgix-swift [![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=master)](https://travis-ci.org/imgix/imgix-swift) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/ImgixSwift.svg)](https://cocoapods.org/pods/ImgixSwift)
+`imgix-swift` is a client library for generating image URLs with [imgix](https://www.imgix.com/). Written in Swift, but can be used with Objective-C codebases as well.
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/ImgixSwift.svg)](https://cocoapods.org/pods/ImgixSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=master)](https://travis-ci.org/imgix/imgix-swift)
+[![License](https://img.shields.io/github/license/imgix/imgix-swift)](https://github.com/imgix/imgix-swift/blob/master/LICENSE.md)
 
-The official imgix Swift client. Written in Swift, but plays nice with Objective-C codebases, too! 👌
-
-imgix is a real-time image processing service and CDN. It lets you edit images on the fly by changing their URL query string parameters. That means you can crop and resize images without having to batch process them or store derivative versions. You can also automatically detect faces, overlay text and other images, and perform advanced compositing operations. To learn more about what you can do with imgix, check out our [site](https://imgix.com/) and [documentation](https://docs.imgix.com).
+---
+<!-- /ix-docs-ignore -->
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -13,7 +17,7 @@ imgix is a real-time image processing service and CDN. It lets you edit images o
   * [Objective-C](#objective-c)
 * [Advanced Usage](#advanced-usage)
   * [Automatic Signing](#automatic-signing)
-  * [Automatic Base64 Encoding](#automatic-base-64-encoding)
+  * [Automatic Base64 Encoding](#automatic-base64-encoding)
   * [URL Reconstruction](#url-reconstruction)
   * [What is the `ixlib` param?](#what-is-the-ixlib-param)
 
