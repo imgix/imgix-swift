@@ -11,32 +11,30 @@
 ---
 <!-- /ix-docs-ignore -->
 
-* [Installation](#installation)
-* [Usage](#usage)
-  * [Swift](#swift)
-  * [Objective-C](#objective-c)
-* [Advanced Usage](#advanced-usage)
-  * [Automatic Signing](#automatic-signing)
-  * [Automatic Base64 Encoding](#automatic-base64-encoding)
-  * [URL Reconstruction](#url-reconstruction)
-  * [What is the `ixlib` param?](#what-is-the-ixlib-param)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Swift](#swift)
+  - [Objective-C](#objective-c)
+- [Advanced Usage](#advanced-usage)
+  - [Automatic Signing](#automatic-signing)
+  - [Automatic Base64 Encoding](#automatic-base64-encoding)
+  - [URL Reconstruction](#url-reconstruction)
+  - [What is the `ixlib` param](#what-is-the-ixlib-param)
 
-<a name="installation"></a>
 ## Installation
 
-* **[Carthage](https://github.com/carthage/carthage):** `github "imgix/imgix-swift"`
-* **[CocoaPods](https://github.com/cocoapods/cocoapods):** `pod "ImgixSwift"`
+- **[Carthage](https://github.com/carthage/carthage):** `github "imgix/imgix-swift"`
+- **[CocoaPods](https://github.com/cocoapods/cocoapods):** `pod "ImgixSwift"`
 
+The imgix Swift client is compatible with Swift 5.0.
 
-<a name="usage"></a>
-## Usage
-
-<a name="swift"></a>
-### Swift
-
-The imgix Swift client is compatible with Swift 4.0.
+The lastest version compatible with Swift 4.0 is [`0.4.3`](https://github.com/imgix/imgix-swift/releases/tag/0.4.3).
 
 The lastest version compatible with Swift 3.0 is [`0.3.0`](https://github.com/imgix/imgix-swift/releases/tag/0.3.0).
+
+## Usage
+
+### Swift
 
 ``` swift
 // Import the framework
@@ -56,7 +54,6 @@ client.buildUrl("dog.jpg", params: [
 ]) // => https://assets.imgix.net/dog.jpg?fit=crop&h=300&w=300
 ```
 
-<a name="objective-c"></a>
 ### Objective-C
 
 If your project doesn't contain any other Swift code, make sure to set your target's `Build Settings > Build Options > Embedded Content Contains Swift Code` to `YES`.
@@ -79,11 +76,8 @@ ImgixClient *client = [[ImgixClient alloc] initWithHost:@"assets.imgix.net"];
 }]; // => https://assets.imgix.net/dog.jpg?fit=crop&h=300&w=300
 ```
 
-
-<a name="advanced-usage"></a>
 ## Advanced Usage
 
-<a name="automatic-signing"></a>
 ### Automatic Signing
 
 If you're using a source that requires signed URLs, imgix-swift can automatically build and sign them for you.
@@ -99,7 +93,6 @@ signedClient.buildUrl("dog.jpg", params: [
 ]) // => https://imgix-library-secure-test-source.imgix.net/dog.jpg?bri=50&s=3b293930d9c288fb788657fd9ed8164f
 ```
 
-<a name="automatic-base64-encoding"></a>
 ### Automatic Base64 Encoding
 
 imgix-swift will automatically Base64-encode any parameter key ending in `64`, according to the requirements of imgix's [Base64 variant parameters](https://docs.imgix.com/apis/url#base64-variants).
@@ -120,7 +113,6 @@ client.buildUrl("dog.jpg", params: [
 ]) // => https://assets.imgix.net/dog.jpg?txt64=8J-QtiBQdXBweSE&txtalign=center%2Ctop&txtclr=fff&txtfit=max&txtfont64=QXZlbmlyIE5leHQgRGVtaSxCb2xk&txtpad=50&txtshad=10&txtsize=50&w=640
 ```
 
-<a name="url-reconstruction"></a>
 ### URL Reconstruction
 
 You can reconstruct existing URLs by using the `ImgixClient#reconstruct` method. Existing parameters on the input URL will be merged and/or overridden by passed params.
@@ -135,8 +127,6 @@ client.reconstruct(originalURL: inputUrl, params: [
 ]) // => https://paulstraw.imgix.net/pika.jpg?fit=crop&h=300&w=300
 ```
 
-
-<a name="what-is-the-ixlib-param"></a>
-### What is the `ixlib` param?
+### What is the `ixlib` param
 
 For security and diagnostic purposes, we default to signing all requests with the language and version of library used to generate the URL. This can be disabled by setting `client.includeLibraryParam = false`.
