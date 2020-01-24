@@ -30,7 +30,7 @@ The imgix Swift client is compatible with Swift 5.0.
 
 The latest version compatible with Swift 4.0 is [`0.4.3`](https://github.com/imgix/imgix-swift/releases/tag/0.4.3).
 
-The lastest version compatible with Swift 3.0 is [`0.3.0`](https://github.com/imgix/imgix-swift/releases/tag/0.3.0).
+The latest version compatible with Swift 3.0 is [`0.3.0`](https://github.com/imgix/imgix-swift/releases/tag/0.3.0).
 
 ## Usage
 
