@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
 		580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
+		580B383A23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		580B383B23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		580B383C23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8F06ECF11D2C8AA8001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */; };
 		8F06ED001D2C8ABA001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */; };
 		8F06ED0F1D2C8AD2001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */; };
@@ -27,15 +30,6 @@
 		8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
 		8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
 		8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F7467631D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467641D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467651D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */; };
-		8F7467671D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F7467681D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F7467691D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
 		8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
@@ -67,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Umbrella-Header.h"; path = "Sources/ImgixSwift-Umbrella-Header.h"; sourceTree = "<group>"; };
+		580B383923E4ED5F00FB9DF3 /* ImgixSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = ImgixSwift.modulemap; path = Sources/ImgixSwift.modulemap; sourceTree = "<group>"; };
 		8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,10 +70,6 @@
 		8F06ECFB1D2C8ABA001CEC88 /* ImgixSwiftTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ED0A1D2C8AD2001CEC88 /* ImgixSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+ImgixSwift.swift"; path = "Sources/String+ImgixSwift.swift"; sourceTree = "<group>"; };
-		8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ImgixSwiftMd5.m"; path = "Sources/NSString+ImgixSwiftMd5.m"; sourceTree = "<group>"; };
-		8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ImgixSwiftMd5.h"; path = "Sources/NSString+ImgixSwiftMd5.h"; sourceTree = "<group>"; };
-		8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Umbrella-Header.h"; path = "Sources/ImgixSwift-Umbrella-Header.h"; sourceTree = "<group>"; };
-		8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = ImgixSwift.modulemap; path = Sources/ImgixSwift.modulemap; sourceTree = "<group>"; };
 		8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
 		8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
 		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
@@ -165,10 +157,8 @@
 				8F91A76E1D2C94CD0010384D /* Info.plist */,
 				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
 				8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */,
-				8F7467621D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m */,
-				8F7467661D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h */,
-				8F74676A1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h */,
-				8F74676F1D2CC15000E1CE15 /* ImgixSwift.modulemap */,
+				580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */,
+				580B383923E4ED5F00FB9DF3 /* ImgixSwift.modulemap */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -193,8 +183,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676B1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467671D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
+				580B383A23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +191,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676C1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467681D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
+				580B383B23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +199,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F74676D1D2CBF9600E1CE15 /* ImgixSwift-Umbrella-Header.h in Headers */,
-				8F7467691D2CBD1A00E1CE15 /* NSString+ImgixSwiftMd5.h in Headers */,
+				580B383C23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467631D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
 				8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +432,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467641D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
 				8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F7467651D2CBD0900E1CE15 /* NSString+ImgixSwiftMd5.m in Sources */,
 				8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
