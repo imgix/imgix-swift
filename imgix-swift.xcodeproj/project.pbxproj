@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
+		580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
 		8F06ECF11D2C8AA8001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */; };
 		8F06ED001D2C8ABA001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */; };
 		8F06ED0F1D2C8AD2001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */; };
@@ -365,6 +367,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8F82BE501D25EDDD00551F76;
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */,
 				8F06ED1B1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
 				8F06ED191D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
 				8F06ED1A1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
@@ -485,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */,
 				8F06ED1F1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
 				8F06ED1D1D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
 				8F06ED1E1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
