@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
 		580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
-		580B383A23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		580B383B23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		580B383C23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8F06ECF11D2C8AA8001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */; };
 		8F06ED001D2C8ABA001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */; };
 		8F06ED0F1D2C8AD2001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */; };
@@ -61,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ImgixSwift-Umbrella-Header.h"; path = "Sources/ImgixSwift-Umbrella-Header.h"; sourceTree = "<group>"; };
-		580B383923E4ED5F00FB9DF3 /* ImgixSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = ImgixSwift.modulemap; path = Sources/ImgixSwift.modulemap; sourceTree = "<group>"; };
 		8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,8 +152,6 @@
 				8F91A76E1D2C94CD0010384D /* Info.plist */,
 				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
 				8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */,
-				580B383823E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h */,
-				580B383923E4ED5F00FB9DF3 /* ImgixSwift.modulemap */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -183,7 +176,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580B383A23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +183,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580B383B23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +190,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580B383C23E4ED5F00FB9DF3 /* ImgixSwift-Umbrella-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +515,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -549,7 +539,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -591,7 +581,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -609,7 +599,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
@@ -649,7 +639,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -672,7 +662,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -714,7 +704,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -731,7 +721,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
@@ -773,7 +763,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -798,7 +788,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
@@ -840,7 +830,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -859,7 +849,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = Sources/ImgixSwift.modulemap;
+				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.imgix.ImgixSwift;
 				PRODUCT_NAME = ImgixSwift;
