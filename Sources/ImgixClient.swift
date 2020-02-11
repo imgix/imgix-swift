@@ -150,7 +150,7 @@ import Foundation
             signatureBase += "?" + queryString
         }
 
-        let signature = signatureBase.ixMd5
+        let signature = signatureBase.ixMd5()
 
         return URLQueryItem.init(name: "s", value: signature)
     }
