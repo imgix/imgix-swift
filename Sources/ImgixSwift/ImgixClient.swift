@@ -2,9 +2,6 @@
 //  ImgixClient.swift
 //  imgix-swift
 //
-//  Created by Paul Straw on 6/30/16.
-//
-//
 
 import Foundation
 
@@ -13,7 +10,7 @@ import Foundation
 
     @objc public let host: String
     @objc open var useHttps: Bool = true
-    @objc open var secureUrlToken: String? = nil
+    @objc open var secureUrlToken: String?
     @objc open var includeLibraryParam: Bool = true
 
     @objc public init(host: String) {
@@ -46,7 +43,10 @@ import Foundation
         urlComponents.queryItems = buildParams(params)
 
         if secureUrlToken != nil {
-            let signature = signatureForPathAndQueryString(path, queryString: encodeQueryItems(urlComponents.queryItems!))
+            let signature = signatureForPathAndQueryString(
+                path,
+                queryString: encodeQueryItems(urlComponents.queryItems!)
+            )
             urlComponents.queryItems?.append(signature)
         }
 
@@ -73,7 +73,7 @@ import Foundation
             }
         }
 
-        mergedParams.addEntries(from: params as! [AnyHashable : Any])
+        mergedParams.addEntries(from: params as! [AnyHashable: Any])
 
         let generatedURL = buildUrl(originalURL.path, params: mergedParams)
 
@@ -120,26 +120,26 @@ import Foundation
         var queryItems = [URLQueryItem]()
         let queryParams: NSMutableDictionary = NSMutableDictionary.init(dictionary: params)
 
-        if (includeLibraryParam) {
+        if includeLibraryParam {
             queryParams.setValue("swift-" + ImgixClient.VERSION, forKey: "ixlib")
         }
 
         let keys = queryParams.allKeys.map { String(describing: $0) }
-        
+
         for key in keys.sorted(by: {$0 < $1}) {
             if let val = queryParams[key] {
                 var stringVal = String(describing: val)
-                
+
                 if key.hasSuffix("64") {
                     stringVal = stringVal.ixEncode64()
                 }
 
                 let queryItem = URLQueryItem.init(name: key, value: stringVal)
-                
+
                 queryItems.append(queryItem)
             }
         }
-        
+
         return queryItems
     }
 

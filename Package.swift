@@ -12,7 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "ImgixSwift",
-            targets: ["ImgixSwift"]),
+            targets: ["ImgixSwift"])
     ],
     targets: [
         .target(
@@ -24,4 +24,3 @@ let package = Package(
     ],
     swiftLanguageVersions: [.v5]
 )
-
