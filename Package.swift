@@ -7,7 +7,7 @@ let package = Package(
     platforms: [
         .macOS(.v10_10),
         .iOS(.v9),
-        .tvOS(.v9_2)
+        .tvOS(.v9)
     ],
     products: [
         .library(
@@ -16,11 +16,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ImgixSwift",
-            path: "Sources"),
+            name: "ImgixSwift"
+        ),
         .testTarget(
             name: "ImgixSwiftTests",
-            path: "ImgixSwiftTests")
+            dependencies: ["ImgixSwift"])
     ],
     swiftLanguageVersions: [.v5]
 )
