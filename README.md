@@ -6,6 +6,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/ImgixSwift.svg)](https://cocoapods.org/pods/ImgixSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=master)](https://travis-ci.org/imgix/imgix-swift)
+![Supported Platforms](https://img.shields.io/cocoapods/p/ImgixSwift.svg)
 [![License](https://img.shields.io/github/license/imgix/imgix-swift)](https://github.com/imgix/imgix-swift/blob/master/LICENSE.md)
 
 ---
@@ -25,8 +26,21 @@
 
 - **[Carthage](https://github.com/carthage/carthage):** `github "imgix/imgix-swift"`
 - **[CocoaPods](https://github.com/cocoapods/cocoapods):** `pod "ImgixSwift"`
+- **[Swift Package Manager](https://github.com/apple/swift-package-manager)**:
 
-The imgix Swift client is compatible with Swift 5.0.
+```swift
+// add the following to your Package.swift manifest, within the dependencies array
+
+.package(url: "https://github.com/imgix/imgix-swift.git", from: "1.0.0")
+
+// add the package name "ImgixSwift" to the list of named dependencies in your project target
+
+.target(
+    name: "YourSwiftProject",
+    dependencies: ["ImgixSwift"]),
+```
+
+As of version [`1.0.0`](https://github.com/imgix/imgix-swift/releases/tag/1.0.0) imgix Swift client is compatible with Swift 5.0.
 
 The latest version compatible with Swift 4.0 is [`0.4.3`](https://github.com/imgix/imgix-swift/releases/tag/0.4.3).
 

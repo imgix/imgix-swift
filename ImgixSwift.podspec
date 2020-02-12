@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ImgixSwift"
-  s.version = "1.0.0"
+  s.version = "1.1.0"
   s.summary = "The official imgix Swift client. Written in Swift, but plays nice with Objective-C codebases, too! 👌"
 
   s.license = { :type => 'BSD 2-Clause', :file => 'LICENSE.md' }
@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files = ["Sources/ImgixSwift/*.swift"]
+
+  s.swift_versions = ['3.0', '4.0', '5.0']
 
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.10"
