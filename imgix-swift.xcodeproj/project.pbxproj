@@ -7,30 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
-		580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
+		588DC28523F3666000E7B7D7 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27C23F3666000E7B7D7 /* WebProxyTests.swift */; };
+		588DC28623F3666000E7B7D7 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27C23F3666000E7B7D7 /* WebProxyTests.swift */; };
+		588DC28723F3666000E7B7D7 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27C23F3666000E7B7D7 /* WebProxyTests.swift */; };
+		588DC28B23F3666000E7B7D7 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27D23F3666000E7B7D7 /* ReconstructTests.swift */; };
+		588DC28C23F3666000E7B7D7 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27D23F3666000E7B7D7 /* ReconstructTests.swift */; };
+		588DC28D23F3666000E7B7D7 /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27D23F3666000E7B7D7 /* ReconstructTests.swift */; };
+		588DC29123F3666000E7B7D7 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27E23F3666000E7B7D7 /* InitializationTests.swift */; };
+		588DC29223F3666000E7B7D7 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27E23F3666000E7B7D7 /* InitializationTests.swift */; };
+		588DC29323F3666000E7B7D7 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27E23F3666000E7B7D7 /* InitializationTests.swift */; };
+		588DC29723F3666000E7B7D7 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27F23F3666000E7B7D7 /* BuildUrlTests.swift */; };
+		588DC29823F3666000E7B7D7 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27F23F3666000E7B7D7 /* BuildUrlTests.swift */; };
+		588DC29923F3666000E7B7D7 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC27F23F3666000E7B7D7 /* BuildUrlTests.swift */; };
+		588DC2A323F3666000E7B7D7 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC28123F3666000E7B7D7 /* SignatureTests.swift */; };
+		588DC2A423F3666000E7B7D7 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC28123F3666000E7B7D7 /* SignatureTests.swift */; };
+		588DC2A523F3666000E7B7D7 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC28123F3666000E7B7D7 /* SignatureTests.swift */; };
+		588DC2AB23F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2AC23F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2AD23F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2AE23F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2AF23F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2B023F3666400E7B7D7 /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A823F3666400E7B7D7 /* ImgixClient.swift */; };
+		588DC2B123F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
+		588DC2B223F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
+		588DC2B323F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
+		588DC2B423F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
+		588DC2B523F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
+		588DC2B623F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */; };
 		8F06ECF11D2C8AA8001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */; };
 		8F06ED001D2C8ABA001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */; };
 		8F06ED0F1D2C8AD2001CEC88 /* ImgixSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */; };
-		8F06ED151D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */; };
-		8F06ED161D2C8AE1001CEC88 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
-		8F06ED171D2C8AE1001CEC88 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */; };
-		8F06ED181D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */; };
-		8F06ED191D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */; };
-		8F06ED1A1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
-		8F06ED1B1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */; };
-		8F06ED1C1D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */; };
-		8F06ED1D1D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */; };
-		8F06ED1E1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */; };
-		8F06ED1F1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */; };
-		8F06ED201D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */; };
-		8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */; };
-		8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
-		8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
-		8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A7751D2C94EB0010384D /* ImgixClient.swift */; };
-		8FB9ABCD1DCC037B00D2FD6B /* ReconstructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,21 +64,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		588DC27C23F3666000E7B7D7 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
+		588DC27D23F3666000E7B7D7 /* ReconstructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructTests.swift; sourceTree = "<group>"; };
+		588DC27E23F3666000E7B7D7 /* InitializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializationTests.swift; sourceTree = "<group>"; };
+		588DC27F23F3666000E7B7D7 /* BuildUrlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildUrlTests.swift; sourceTree = "<group>"; };
+		588DC28023F3666000E7B7D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588DC28123F3666000E7B7D7 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
+		588DC2A823F3666400E7B7D7 /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgixClient.swift; sourceTree = "<group>"; };
+		588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ImgixSwift.swift"; sourceTree = "<group>"; };
+		588DC2AA23F3666400E7B7D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F06ECA51D2C8805001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECBF1D2C8828001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECCC1D2C8832001CEC88 /* ImgixSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgixSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECEC1D2C8AA8001CEC88 /* ImgixSwiftTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ECFB1D2C8ABA001CEC88 /* ImgixSwiftTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F06ED0A1D2C8AD2001CEC88 /* ImgixSwiftTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgixSwiftTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+ImgixSwift.swift"; path = "Sources/String+ImgixSwift.swift"; sourceTree = "<group>"; };
-		8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTests.swift; sourceTree = "<group>"; };
-		8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProxyTests.swift; sourceTree = "<group>"; };
-		8F91A76E1D2C94CD0010384D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
-		8F91A7751D2C94EB0010384D /* ImgixClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImgixClient.swift; path = Sources/ImgixClient.swift; sourceTree = "<group>"; };
-		8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReconstructTests.swift; sourceTree = "<group>"; };
-		8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationTests.swift; sourceTree = "<group>"; };
-		8FF42E921D2B312C002BE7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildUrlTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +130,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		588DC27A23F3666000E7B7D7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				588DC27B23F3666000E7B7D7 /* ImgixSwiftTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		588DC27B23F3666000E7B7D7 /* ImgixSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				588DC27C23F3666000E7B7D7 /* WebProxyTests.swift */,
+				588DC27D23F3666000E7B7D7 /* ReconstructTests.swift */,
+				588DC27E23F3666000E7B7D7 /* InitializationTests.swift */,
+				588DC27F23F3666000E7B7D7 /* BuildUrlTests.swift */,
+				588DC28023F3666000E7B7D7 /* Info.plist */,
+				588DC28123F3666000E7B7D7 /* SignatureTests.swift */,
+			);
+			path = ImgixSwiftTests;
+			sourceTree = "<group>";
+		};
+		588DC2A623F3666400E7B7D7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				588DC2A723F3666400E7B7D7 /* ImgixSwift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		588DC2A723F3666400E7B7D7 /* ImgixSwift */ = {
+			isa = PBXGroup;
+			children = (
+				588DC2A823F3666400E7B7D7 /* ImgixClient.swift */,
+				588DC2A923F3666400E7B7D7 /* String+ImgixSwift.swift */,
+				588DC2AA23F3666400E7B7D7 /* Info.plist */,
+			);
+			path = ImgixSwift;
+			sourceTree = "<group>";
+		};
 		8F82BE501D25EDDD00551F76 = {
 			isa = PBXGroup;
 			children = (
 				8F82BE5D1D25EE1100551F76 /* Products */,
-				8FF42E8F1D2B312C002BE7D4 /* ImgixSwiftTests */,
-				8F82BE921D25F0ED00551F76 /* Sources */,
+				588DC2A623F3666400E7B7D7 /* Sources */,
+				588DC27A23F3666000E7B7D7 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,29 +189,6 @@
 				8F06ED0A1D2C8AD2001CEC88 /* ImgixSwiftTests-tvOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8F82BE921D25F0ED00551F76 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				8F91A76E1D2C94CD0010384D /* Info.plist */,
-				8F91A7751D2C94EB0010384D /* ImgixClient.swift */,
-				8F12BC2D1D2EF2FE00B56C8A /* String+ImgixSwift.swift */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		8FF42E8F1D2B312C002BE7D4 /* ImgixSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				8FF42EA01D2B38AC002BE7D4 /* BuildUrlTests.swift */,
-				8FF42E901D2B312C002BE7D4 /* InitializationTests.swift */,
-				8FB9ABCC1DCC037B00D2FD6B /* ReconstructTests.swift */,
-				8F9052181D2C34A000B0C1B6 /* SignatureTests.swift */,
-				8F90521A1D2C3D0B00B0C1B6 /* WebProxyTests.swift */,
-				8FF42E921D2B312C002BE7D4 /* Info.plist */,
-			);
-			path = ImgixSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,8 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A77B1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F12BC2E1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				588DC2B123F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2AB23F3666400E7B7D7 /* ImgixClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,8 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A77C1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F12BC2F1D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				588DC2B223F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2AC23F3666400E7B7D7 /* ImgixClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F91A77D1D2C94EB0010384D /* ImgixClient.swift in Sources */,
-				8F12BC301D2EF2FE00B56C8A /* String+ImgixSwift.swift in Sources */,
+				588DC2B323F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2AD23F3666400E7B7D7 /* ImgixClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,11 +461,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F06ED171D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
-				8FB9ABCD1DCC037B00D2FD6B /* ReconstructTests.swift in Sources */,
-				8F06ED151D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
-				8F06ED161D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
-				8F06ED181D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */,
+				588DC29723F3666000E7B7D7 /* BuildUrlTests.swift in Sources */,
+				588DC2B423F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2AE23F3666400E7B7D7 /* ImgixClient.swift in Sources */,
+				588DC2A323F3666000E7B7D7 /* SignatureTests.swift in Sources */,
+				588DC28B23F3666000E7B7D7 /* ReconstructTests.swift in Sources */,
+				588DC29123F3666000E7B7D7 /* InitializationTests.swift in Sources */,
+				588DC28523F3666000E7B7D7 /* WebProxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,11 +475,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580B383623E4DFEA00FB9DF3 /* ReconstructTests.swift in Sources */,
-				8F06ED1B1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
-				8F06ED191D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
-				8F06ED1A1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
-				8F06ED1C1D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */,
+				588DC29823F3666000E7B7D7 /* BuildUrlTests.swift in Sources */,
+				588DC2B523F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2AF23F3666400E7B7D7 /* ImgixClient.swift in Sources */,
+				588DC2A423F3666000E7B7D7 /* SignatureTests.swift in Sources */,
+				588DC28C23F3666000E7B7D7 /* ReconstructTests.swift in Sources */,
+				588DC29223F3666000E7B7D7 /* InitializationTests.swift in Sources */,
+				588DC28623F3666000E7B7D7 /* WebProxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,11 +489,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580B383523E4DFA100FB9DF3 /* ReconstructTests.swift in Sources */,
-				8F06ED1F1D2C8AE1001CEC88 /* SignatureTests.swift in Sources */,
-				8F06ED1D1D2C8AE1001CEC88 /* BuildUrlTests.swift in Sources */,
-				8F06ED1E1D2C8AE1001CEC88 /* InitializationTests.swift in Sources */,
-				8F06ED201D2C8AE1001CEC88 /* WebProxyTests.swift in Sources */,
+				588DC29923F3666000E7B7D7 /* BuildUrlTests.swift in Sources */,
+				588DC2B623F3666400E7B7D7 /* String+ImgixSwift.swift in Sources */,
+				588DC2B023F3666400E7B7D7 /* ImgixClient.swift in Sources */,
+				588DC2A523F3666000E7B7D7 /* SignatureTests.swift in Sources */,
+				588DC28D23F3666000E7B7D7 /* ReconstructTests.swift in Sources */,
+				588DC29323F3666000E7B7D7 /* InitializationTests.swift in Sources */,
+				588DC28723F3666000E7B7D7 /* WebProxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -595,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -659,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
@@ -718,7 +746,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
@@ -784,7 +812,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -845,7 +873,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ImgixSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -869,6 +897,7 @@
 		8F06ECF51D2C8AA8001CEC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -903,7 +932,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -920,6 +949,7 @@
 		8F06ECF61D2C8AA8001CEC88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -948,7 +978,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -963,6 +993,7 @@
 		8F06ED041D2C8ABA001CEC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -996,7 +1027,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1012,6 +1043,7 @@
 		8F06ED051D2C8ABA001CEC88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1039,7 +1071,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1054,6 +1086,7 @@
 		8F06ED131D2C8AD2001CEC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1086,7 +1119,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1102,6 +1135,7 @@
 		8F06ED141D2C8AD2001CEC88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1128,7 +1162,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ImgixSwiftTests/Info.plist;
+				INFOPLIST_FILE = Tests/ImgixSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.imgix.ImgixSwiftTests-tvOS";

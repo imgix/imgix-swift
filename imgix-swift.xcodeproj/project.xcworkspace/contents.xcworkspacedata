@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:../Sources"
+      name = "Sources">
+      <Group
+         location = "group:ImgixSwift"
+         name = "ImgixSwift">
+         <FileRef
+            location = "group:ImgixClient.swift">
+         </FileRef>
+         <FileRef
+            location = "group:String+ImgixSwift.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:../Tests"
+      name = "Tests">
+      <Group
+         location = "group:ImgixSwiftTests"
+         name = "ImgixSwiftTests">
+         <FileRef
+            location = "group:WebProxyTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ReconstructTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:InitializationTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:BuildUrlTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:SignatureTests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:../Sources/ImgixSwift"
+      name = "ImgixSwift">
+      <FileRef
+         location = "group:ImgixClient.swift">
+      </FileRef>
+      <FileRef
+         location = "group:String+ImgixSwift.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+   </Group>
    <FileRef
-      location = "self:imgix-swift.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
