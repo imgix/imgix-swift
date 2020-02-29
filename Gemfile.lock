@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     plist (3.2.0)
-    rake (11.2.2)
+    rake (12.3.3)
     rouge (1.11.1)
     xcpretty (0.2.2)
       rouge (~> 1.8)
