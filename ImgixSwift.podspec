@@ -8,10 +8,6 @@ Pod::Spec.new do |s|
   s.authors = { "Paul Straw" => "paulstraw@paulstraw.com", "Sherwin Heydarbeygi" => "sherwin@imgix.com" }
   s.source = { :git => "https://github.com/imgix/imgix-swift.git", :tag => s.version }
 
-  s.xcconfig = {
-    "SWIFT_OBJC_INTERFACE_HEADER_NAME" => "ImgixSwift.h"
-  }
-
   s.requires_arc = true
   s.source_files = ["Sources/ImgixSwift/*.swift"]
 
