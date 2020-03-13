@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1](https://github.com/imgix/imgix-swift/compare/1.1.0...1.1.1) (2020-03-12)
+
+* fix: remove residual objc interface header ([#24](https://github.com/imgix/imgix-swift/pull/24)) 
+
 ## [1.1.0](https://github.com/imgix/imgix-swift/compare/1.0.0...1.1.0) (2020-02-12)
 
 * build(spm): add swift package manifest ([#21](https://github.com/imgix/imgix-swift/pull/21))

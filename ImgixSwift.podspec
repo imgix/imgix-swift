@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ImgixSwift"
-  s.version = "1.1.0"
+  s.version = "1.1.1"
   s.summary = "The official imgix Swift client. Written in Swift, but plays nice with Objective-C codebases, too! 👌"
 
   s.license = { :type => 'BSD 2-Clause', :file => 'LICENSE.md' }
