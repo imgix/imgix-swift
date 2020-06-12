@@ -37,4 +37,12 @@ class WebProxyTests: XCTestCase {
 
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
+
+    func testEscapesEncodedPath() {
+        let generatedUrl = client.buildUrl("http://files.paulstraw.com/%D8%B3%D8%A7%D9%86%D8%AF%D9%88%DB%8C%DA%86.jpg")
+        let expectedUrl = "https://imgix-library-web-proxy-test-source.imgix.net/" +
+            "http%3A%2F%2Ffiles.paulstraw.com%2F%25D8%25B3%25D8%25A7%25D9%2586%25D8%25AF%25D9%2588%25DB%258C%25DA%2586.jpg?s=aaecb132495341b884a0d8e35a51ae11"
+
+        XCTAssert(generatedUrl.absoluteString == expectedUrl)
+    }
 }
