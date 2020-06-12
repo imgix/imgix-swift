@@ -96,6 +96,9 @@ import Foundation
         if path.hasPrefix("http://") || path.hasPrefix("https://") {
             path = path.ixEncodeUriComponent()
         }
+        else {
+            path = path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? path
+        }
 
         if !path.hasPrefix("/") {
             path = "/" + path
