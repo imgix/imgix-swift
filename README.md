@@ -5,7 +5,7 @@
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/ImgixSwift.svg)](https://cocoapods.org/pods/ImgixSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Build Status](https://travis-ci.org/imgix/imgix-swift.svg?branch=main)](https://travis-ci.org/imgix/imgix-swift)
+[![Build Status](https://travis-ci.com/imgix/imgix-swift.svg?branch=main)](https://travis-ci.com/imgix/imgix-swift)
 ![Supported Platforms](https://img.shields.io/cocoapods/p/ImgixSwift.svg)
 [![License](https://img.shields.io/github/license/imgix/imgix-swift)](https://github.com/imgix/imgix-swift/blob/main/LICENSE.md)
 
