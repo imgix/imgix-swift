@@ -8,19 +8,21 @@
 ![Build Status](https://img.shields.io/circleci/build/github/imgix/imgix-swift)
 ![Supported Platforms](https://img.shields.io/cocoapods/p/ImgixSwift.svg)
 [![License](https://img.shields.io/github/license/imgix/imgix-swift)](https://github.com/imgix/imgix-swift/blob/main/LICENSE.md)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift?ref=badge_shield)
 
 ---
 <!-- /ix-docs-ignore -->
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Swift](#swift)
-  - [Objective-C](#objective-c)
+    * [Swift](#swift)
+    * [Objective-C](#objective-c)
 - [Advanced Usage](#advanced-usage)
-  - [Automatic Signing](#automatic-signing)
-  - [Automatic Base64 Encoding](#automatic-base64-encoding)
-  - [URL Reconstruction](#url-reconstruction)
-  - [What is the `ixlib` param](#what-is-the-ixlib-param)
+    * [Automatic Signing](#automatic-signing)
+    * [Automatic Base64 Encoding](#automatic-base64-encoding)
+    * [URL Reconstruction](#url-reconstruction)
+    * [What is the `ixlib` param](#what-is-the-ixlib-param)
+- [License](#license)
 
 ## Installation
 
@@ -144,3 +146,6 @@ client.reconstruct(originalURL: inputUrl, params: [
 ### What is the `ixlib` param
 
 For security and diagnostic purposes, we default to signing all requests with the language and version of library used to generate the URL. This can be disabled by setting `client.includeLibraryParam = false`.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift?ref=badge_large)
