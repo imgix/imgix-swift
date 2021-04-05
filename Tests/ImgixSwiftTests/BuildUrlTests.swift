@@ -131,6 +131,13 @@ class BuildUrlTests: XCTestCase {
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
 
+    func testEncodesUnicode() {
+        let generatedUrl = client.buildUrl("/example/I cannøt belîév∑ it wors! 😱.jpg", params: [:])
+        let expectedUrl = "https://paulstraw.imgix.net/example/I%20cann%C3%B8t%20bel%C3%AE%C3%A9v%E2%88%91%20it%20wor%EF%A3%BFs!%20%F0%9F%98%B1.jpg"
+
+        XCTAssert(generatedUrl.absoluteString == expectedUrl)
+    }
+
     func testDoesNotEncodeValidPathCharacters() {
         let generatedUrl = client.buildUrl("images/sub_directory-3/date,12.2020/bluehat.jpg", params: [:])
         let expectedUrl = "https://paulstraw.imgix.net/images/sub_directory-3/date,12.2020/bluehat.jpg"
