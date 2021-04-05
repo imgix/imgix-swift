@@ -118,8 +118,8 @@ class BuildUrlTests: XCTestCase {
     }
 
     func testEncodesReservedCharacters() {
-        let generatedUrl = client.buildUrl(":?#.jpg", params: [:])
-        let expectedUrl = "https://paulstraw.imgix.net/%3A%3F%23.jpg"
+        let generatedUrl = client.buildUrl("&$+,:;=?@#.jpg", params: [:])
+        let expectedUrl = "https://paulstraw.imgix.net/&$%2B,%3A%3B=%3F@%23.jpg"
 
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
