@@ -1,0 +1,32 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "swift: test",
+      "type": "shell",
+      "command": "echo 'Testing build artifacts\n'; swift test -v",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "swift: build",
+      "type": "shell",
+      "command": "echo 'Creating build artifacts\n'; swift build -v",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "swift: package clean"
+    },
+    {
+      "label": "swift: package clean",
+      "type": "shell",
+      "command": "echo 'Deleting build artifacts\n'; swift package clean",
+      "group": "build"
+    }
+  ]
+}
