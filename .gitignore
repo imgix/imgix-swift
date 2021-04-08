@@ -75,3 +75,5 @@ fastlane/test_output
 # End of https://www.gitignore.io/api/swift
 
 .DS_Store
+# Swift PM Workspace Specific Settings
+.swiftpm/xcode/package.xcworkspace
