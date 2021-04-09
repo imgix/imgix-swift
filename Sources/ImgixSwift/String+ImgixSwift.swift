@@ -15,6 +15,12 @@ extension String {
         return charSet
     }()
 
+    static var ixEncodeUriCharSet: CharacterSet = {
+        var charSet = CharacterSet.urlPathAllowed
+        charSet.remove(charactersIn: "#?:+")
+        return charSet
+    }()
+
     func ixEncode64() -> String {
         let strData = self.data(using: String.Encoding.utf8)
 
@@ -31,6 +37,10 @@ extension String {
 
     func ixEncodeUriComponent() -> String {
         return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriComponentCharSet)!
+    }
+
+    func ixEncodeUri() -> String {
+        return self.addingPercentEncoding(withAllowedCharacters: String.ixEncodeUriCharSet)!
     }
 
     func ixMd5() -> String {
