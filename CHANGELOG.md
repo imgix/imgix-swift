@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.3](https://github.com/imgix/imgix-swift/compare/1.1.2...1.1.3) (2021-04-13)
+
+* fix(sanitizePath): encode plus with ixEncodeURI ([#35](https://github.com/imgix/imgix-swift/pull/35))
+* docs: use circleci build badge
+* docs: update travis badge to travis-ci.com
+
 ## [1.1.2](https://github.com/imgix/imgix-swift/compare/1.1.1...1.1.2) (2020-06-17)
 
 * fix: percent-encode any invalid characters in URL path ([adb8694](https://github.com/imgix/imgix-swift/commit/adb8694a004bde19561cfd15acc2d8880fb4c838))
