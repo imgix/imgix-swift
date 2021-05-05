@@ -125,8 +125,8 @@ class BuildUrlTests: XCTestCase {
     }
 
     func testEncodesUnsafeCharacters() {
-        let generatedUrl = client.buildUrl(" <>[]{}|^%\\.jpg", params: [:])
-        let expectedUrl = "https://paulstraw.imgix.net/%20%3C%3E%5B%5D%7B%7D%7C%5E%25%5C.jpg"
+        let generatedUrl = client.buildUrl(" <>[]{}|\\^%.jpg", params: [:])
+        let expectedUrl = "https://paulstraw.imgix.net/%20%3C%3E%5B%5D%7B%7D%7C%5C%5E%25.jpg"
 
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
