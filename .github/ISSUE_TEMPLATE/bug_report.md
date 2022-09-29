@@ -19,7 +19,7 @@ A bug is a _demonstrable problem_ that is caused by the code in the repository. 
 
 [alternatively, please provide a code example]
 
-```js
+```swift
 // A *self-contained* demonstration of the problem follows...
 // This should be able to be dropped into a file with imgix-swift installed and just work
 ```
