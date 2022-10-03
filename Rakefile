@@ -6,7 +6,7 @@ task :test do
     xcodebuild test \
       -project imgix-swift.xcodeproj \
       -scheme ImgixSwift-iOS \
-      -destination \'OS=14.3,name=iPhone 11\' \
+      -destination \'OS=14.5,name=iPhone 11\' \
       -sdk \'iphonesimulator\' \
       -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES | bundle exec xcpretty --color; exit ${PIPESTATUS[0]}
   '''
