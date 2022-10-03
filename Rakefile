@@ -21,7 +21,7 @@ task :test do
     xcodebuild test \
     -project imgix-swift.xcodeproj \
     -scheme ImgixSwift-tvOS \
-    -destination \'OS=14.3,name=Apple TV\' \
+    -destination \'OS=14.5,name=Apple TV\' \
     -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES | bundle exec xcpretty --color; exit ${PIPESTATUS[0]}
   '''
 end
