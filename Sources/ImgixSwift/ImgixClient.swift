@@ -5,6 +5,9 @@
 
 import Foundation
 
+// regex pattern used to determine if a domain is valid
+let _domainRegex = #"^(?:[a-z\d\-_]{1,62}\.){0,125}(?:[a-z\d](?:\-(?=\-*[a-z\d])|[a-z]|\d){0,62}\.)[a-z\d]{1,63}$"#;
+
 @objc open class ImgixClient: NSObject {
     @objc static public let VERSION = "1.1.3"
 
@@ -13,22 +16,30 @@ import Foundation
     @objc open var secureUrlToken: String?
     @objc open var includeLibraryParam: Bool = true
 
+    enum ClientError: Error {
+        case invalidDomain(host: String, _ reason: String)
+    }
+
     @objc public init(host: String) {
+        let _ = try! ImgixClient.validateDomain(host)
         self.host = host
     }
 
     @objc public init(host: String, useHttps: Bool) {
+        let _ = try! ImgixClient.validateDomain(host)
         self.host = host
         self.useHttps = useHttps
     }
 
     @objc public init(host: String, useHttps: Bool, secureUrlToken: String) {
+        let _ = try! ImgixClient.validateDomain(host)
         self.host = host
         self.useHttps = useHttps
         self.secureUrlToken = secureUrlToken
     }
 
     @objc public init(host: String, secureUrlToken: String) {
+        let _ = try! ImgixClient.validateDomain(host)
         self.host = host
         self.secureUrlToken = secureUrlToken
     }
@@ -156,4 +167,19 @@ import Foundation
 
         return URLQueryItem.init(name: "s", value: signature)
     }
+
+    class public func validateDomain(_ host: String) throws -> String {
+        let regex = try! NSRegularExpression(pattern: _domainRegex)
+        let range = NSRange(location: 0, length: host.count)
+        let match = regex.firstMatch(in: host, options: [], range: range) != nil
+        if !match{
+            throw ClientError.invalidDomain(host:host, """
+            Domain must be passed in as fully-qualified \
+            domain name and should not include a protocol or any path \
+            element, i.e. 'example.imgix.net'.
+            """)
+        }
+        return host
+    }
 }
+
