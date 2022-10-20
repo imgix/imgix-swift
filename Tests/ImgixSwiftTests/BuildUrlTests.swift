@@ -145,4 +145,9 @@ class BuildUrlTests: XCTestCase {
         print(generatedUrl)
         XCTAssert(generatedUrl.absoluteString == expectedUrl)
     }
+    
+    func testValidatesDomain() {
+        let malformedHost = "http://www.imgix.com"
+        XCTAssertThrowsError(try ImgixClient.validateDomain(malformedHost))
+    }
 }
