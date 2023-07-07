@@ -147,5 +147,36 @@ client.reconstruct(originalURL: inputUrl, params: [
 
 For security and diagnostic purposes, we default to signing all requests with the language and version of library used to generate the URL. This can be disabled by setting `client.includeLibraryParam = false`.
 
+### Building Web Proxy URLs
+
+This library automatically encodes URLs used for Web Proxy Sources.
+
+``` swift
+let signedClient = ImgixClient.init(
+  host: "imgix-web-proxy-test-source.imgix.net",
+  secureUrlToken: "EHFQXiZhxP4wA2c4"
+)
+
+signedClient.buildUrl("http://assets.imgix.net/examples/cat.jpg") // => https://imgix-library-secure-test-source.imgix.net/http%3A%2F%2Fassets.imgix.net%2Fexamples%2Fcat.jpg?s=5751ef13a5ca325fab9c4038b080cd80
+```
+
+Do not pre-encode Web Proxied URLs before using the buildUrl function, or your URLs will be double encoded:
+
+``` swift
+let signedClient = ImgixClient.init(
+  host: "imgix-web-proxy-test-source.imgix.net",
+  secureUrlToken: "EHFQXiZhxP4wA2c4"
+)
+
+// URL will return a `400` error due to double encoding
+signedClient.buildUrl("http%3A%2F%2Fassets.imgix.net%2Fexamples%2Fcat.jpg") // => https://imgix-library-secure-test-source.imgix.net/http%253A%252F%252Fassets.imgix.net%252Fexamples%252Fcat.jpg?s=5751ef13a5ca325fab9c4038b080cd80
+```
+
+## Troubleshooting
+
+### Web Proxy URLs returns a `400` error
+
+
+
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimgix%2Fimgix-swift?ref=badge_large)
