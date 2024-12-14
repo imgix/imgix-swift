@@ -1,5 +1,5 @@
 <!-- ix-docs-ignore -->
-![imgix logo](https://assets.imgix.net/sdk-imgix-logo.svg)
+![imgix logo](https://assets.imgix.net/sdk-imgix-logo-new.svg)
 
 `imgix-swift` is a client library for generating image URLs with [imgix](https://www.imgix.com/). Written in Swift, but can be used with Objective-C codebases as well.
 
